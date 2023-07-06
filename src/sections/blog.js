@@ -9,6 +9,9 @@ import thumb1 from 'assets/images/blog/1.png';
 import thumb2 from 'assets/images/blog/2.png';
 import thumb3 from 'assets/images/blog/3.png';
 import Masonry from 'react-masonry-component';
+import sss from '../data/sss'
+
+
 
 function SlickArrow({ className, onClick, control }) {
   return (
@@ -52,22 +55,28 @@ const settings = {
     },
   ],
 };
+const masonryOptions = {
+  transitionDuration: 0,
+};
 
 const Blog = () => {
   return (
     <Box id="blog" as="section" sx={styles.section}>
       <Container>
+   
         <SectionHeading
           sx={styles.heading}
           slogan="Sıkça Sorulan Sorular"
           title="S.S.S"
         />
-        <SlickArrow/>
-     
-        <Slider>
-        <PriceCard question="Yurt herhangi bir derneğe bağlı mı?" answer="Hayır"/>
-        <PriceCard question="Yurt odaları kaç kişilik?" answer="Odalarımız 4 kişilik"/>
-        </Slider>
+        <SlickArrow />
+
+        <Box as={Masonry} options={masonryOptions} sx={styles.galleryWrapper}>
+        {sss?.map((item)=>(
+          <PriceCard question={item.question} answer={item.answer}/>
+        ))}
+    
+        </Box>
       </Container>
     </Box>
   );
@@ -79,6 +88,10 @@ const styles = {
   section: {
     pt: [30, 30, 6],
     pb: [50, 50, 50, 100, 8, 9],
+  },
+  galleryWrapper: {
+    mx: '-15px',
+    fontSize:'14px'
   },
   heading: {
     mb: [30, 30, 30, 50, 60],

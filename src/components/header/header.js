@@ -127,6 +127,8 @@ const styles = {
         '&.active': {
           opacity: 1,
           visibility: 'visible',
+          fontWeight:'600',
+          fontSize:'24px'
         },
         ul: {
           display: 'block',
@@ -173,6 +175,7 @@ const styles = {
     minHeight: 'auto',
     width: '32px',
     ml: '3px',
-
+    backgroundColor:'white',
+    borderRadius:'50%'
   },
 };

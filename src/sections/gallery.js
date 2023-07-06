@@ -58,16 +58,46 @@ const Gallery = () => {
           slogan="Odalar"
           title=" Yeni nesil odalar ve ortak alanlar"
         />
-      
+
         <Box as={Masonry} options={masonryOptions} sx={styles.galleryWrapper}>
-          {data?.map((item) => (
-            <GalleryCard key={item.id} item={item} />
-          ))}
+        
+          <GalleryCard  item={{
+            id: 1,
+            image: gallery1,
+            title: 'Oda-1'
+          }} />
+          <GalleryCard item={{
+            id: 2,
+            image: gallery2,
+            title: 'Banyo'
+          }} />
+
+          <GalleryCard  item={{
+            id: 3,
+            image: gallery3,
+            title: 'Çalışma alanları',
+          }} />
+          <GalleryCard  item={{
+            id: 4,
+            image: gallery4,
+            title: 'Oda-2',
+          }} />
+          <GalleryCard  item={{
+            id: 5,
+            image: gallery5,
+            title: 'Oda-3',
+          }} />
+          <GalleryCard  item={{
+            id: 6,
+            image: gallery6,
+            title: 'Ortak alanlar',
+          }} />
+
         </Box>
         <Link href="/odalar"><a>
-        <Button variant="muted" sx={styles.button}>
-          Daha fazlası <RiArrowRightSLine size="20px" />
-        </Button></a></Link>
+          <Button variant="muted" sx={styles.button}>
+            Daha fazlası <RiArrowRightSLine size="20px" />
+          </Button></a></Link>
       </Container>
     </Box>
   );
