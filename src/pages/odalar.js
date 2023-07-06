@@ -8,6 +8,7 @@ import { RiArrowRightSLine } from 'react-icons/ri';
 import SectionHeading from 'components/section-heading';
 import GalleryCard from 'components/cards/gallery-card';
 import Link from 'next/link';
+import Masonry from 'react-masonry-component';
 import gallery1 from 'assets/images/gallery/1.png';
 import gallery2 from 'assets/images/gallery/2.png';
 import gallery3 from 'assets/images/gallery/3.png';
