@@ -95,6 +95,8 @@ const styles = {
     mb: 20,
     p: {
       color: '#fff',
+      fontSize:'28px',
+      fontFamily: 'DM Sans,sans-serif'
     },
   },
   selectStyle:{

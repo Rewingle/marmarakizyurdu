@@ -69,7 +69,7 @@ const Blog = () => {
           slogan="Sıkça Sorulan Sorular"
           title="S.S.S"
         />
-        <SlickArrow />
+       
 
         <Box as={Masonry} options={masonryOptions} sx={styles.galleryWrapper}>
         {sss?.map((item)=>(
@@ -87,7 +87,7 @@ export default Blog;
 const styles = {
   section: {
     pt: [30, 30, 6],
-    pb: [50, 50, 50, 100, 8, 9],
+    pb: [50, 50, 50, 100, 8, 9]
   },
   galleryWrapper: {
     mx: '-15px',
