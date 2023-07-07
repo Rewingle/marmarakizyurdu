@@ -1,7 +1,7 @@
 export default [
     {
         question: 'Yurt herhangi bir derneğe bağlı mı?',
-        answer: 'Hayır'
+        answer: 'Hayır, yurdumuz herhangi dernek veya vakıfa bağlı değildir.'
     },
     {
         question: 'Yurt sadece Marmara üniversitesi öğrencilerine mi hizmet veriyor?',
