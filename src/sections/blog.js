@@ -72,8 +72,8 @@ const Blog = () => {
        
 
         <Box as={Masonry} options={masonryOptions} sx={styles.galleryWrapper}>
-        {sss?.map((item)=>(
-          <PriceCard question={item.question} answer={item.answer}/>
+        {sss?.map((item,{index})=>(
+         <React.Fragment key={index}><PriceCard question={item.question} answer={item.answer}/></React.Fragment>
         ))}
     
         </Box>

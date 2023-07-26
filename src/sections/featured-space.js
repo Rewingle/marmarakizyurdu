@@ -29,7 +29,7 @@ const data = {
       id: 1,
       icon: wifi,
       title: 'Yüksek hızlı internet',
-      description: '100 mbps hızında fiber internet.',
+      description: '',
     },
     {
       id: 2,
@@ -160,9 +160,9 @@ const FeaturedSpace = () => {
                 <SwiperSlide key={item.id}>
                   <Box as="figure" sx={styles.image}>
                     <Image loading="lazy" src={item.image} alt="" />
-                    <Box as="figcaption">
+                    <Box as="figcaption" sx={{height:['3.4em','4em']}}>
                       <Box>
-                        <Heading as="h4">{item.title}</Heading>
+                        <Heading as="h4" style={{fontSize:'16px'}}>{item.title}</Heading>
                         <Text as="p">{item.desc}</Text>
                       </Box>
                     </Box>
@@ -244,7 +244,7 @@ const styles = {
   progressbar: {
     position: 'absolute',
     left: [15, 25],
-    top: [46, 53],
+    top: [30, 40],
     zIndex: 2,
   },
   progressBar: {

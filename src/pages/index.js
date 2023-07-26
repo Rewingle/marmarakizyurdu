@@ -11,25 +11,27 @@ import Gallery from 'sections/gallery';
 import Pricing from 'sections/pricing';
 import Blog from 'sections/blog';
 import Subscription from 'sections/subscription';
-        
+
+
 export default function IndexPage() {
   return (
-        
-      <ThemeProvider theme={theme}>
-        
-         
-        <Layout>
-          <SEO title="Marmara kız öğrenci yurdu" />
-          <Banner />
-          <Clients />
-          <FeaturedSpace />
-          <Gallery />
-          <Pricing />
-          <OurCustomer />
-          <Blog />
-          <Subscription />
-        </Layout>
-      </ThemeProvider>
-    
+
+    <ThemeProvider theme={theme}>
+
+
+      <Layout>
+        <SEO title="Marmara kız öğrenci yurdu" />
+  
+        <Banner />
+        <Clients />
+        <FeaturedSpace />
+        <Gallery />
+        <Pricing />
+        <OurCustomer />
+        <Blog />
+        <Subscription />
+      </Layout>
+    </ThemeProvider>
+
   );
 }

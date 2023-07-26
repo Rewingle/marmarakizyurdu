@@ -2,9 +2,7 @@ import React from 'react';
 import { ThemeProvider } from 'theme-ui';
 import theme from 'theme';
 import Layout from 'components/layout';
-import Gallery from 'sections/gallery';
 import { jsx, Box, Container, Image, Button } from 'theme-ui';
-import { RiArrowRightSLine } from 'react-icons/ri';
 import SectionHeading from 'components/section-heading';
 import GalleryCard from 'components/cards/gallery-card';
 import Link from 'next/link';
@@ -15,7 +13,7 @@ import gallery3 from 'assets/images/gallery/3.png';
 import gallery4 from 'assets/images/gallery/4.png';
 import gallery5 from 'assets/images/gallery/5.png';
 import gallery6 from 'assets/images/gallery/6.png';
-import Map from 'components/Map';
+import {useRouter} from 'next/router'
 
 function odalar() {
   const data = [
@@ -54,7 +52,7 @@ function odalar() {
   const masonryOptions = {
     transitionDuration: 0,
   };
-  
+  const router = useRouter()
   return (
     <ThemeProvider theme={theme}>
       <Layout>
@@ -64,7 +62,7 @@ function odalar() {
                 sx={styles.heading}
                 title="Bina"
               />
-              
+              {router.pathname}
               <Box as={Masonry} options={masonryOptions} sx={styles.galleryWrapper}>
                 {data?.map((item) => (
                   <GalleryCard key={item.id} item={item} />

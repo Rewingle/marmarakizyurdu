@@ -8,7 +8,7 @@ class CustomDocument extends Document {
 
   render() {
     return (
-      <Html lang="en-US">
+      <Html lang="tr-TR">
         <Head><link rel="shortcut icon" href="/static/favicon.ico" /></Head>
         <body>
           <Main />

@@ -2,10 +2,10 @@ import React from 'react';
 import Head from 'next/head';
 
 export default function SEO({
-  description = 'startup landing descriptions',
-  author = 'RedQ, Inc',
+  description = 'Kız öğrenci yurdu',
+  author = 'Mehmet Ali Kul',
   meta,
-  title = 'startup landing title',
+  title = 'Marmara kız öğrenci yurdu',
 }) {
   const metaData = [
     {
@@ -52,7 +52,7 @@ export default function SEO({
 }
 
 SEO.defaultProps = {
-  lang: `en`,
+  lang: `tr`,
   meta: [],
-  description: ``,
+  description: `Kadıköy'ün merkezinde kız öğrenci yurdu`,
 };

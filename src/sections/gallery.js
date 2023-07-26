@@ -12,35 +12,36 @@ import gallery4 from 'assets/images/gallery/4.png';
 import gallery5 from 'assets/images/gallery/5.png';
 import gallery6 from 'assets/images/gallery/6.png';
 
+
 const data = [
   {
     id: 1,
-    image: gallery1,
+    image: gallery1?gallery1:null,
     title: 'Oda-1',
   },
   {
     id: 2,
-    image: gallery2,
+    image: gallery2?gallery2:null,
     title: 'Banyo',
   },
   {
     id: 3,
-    image: gallery3,
+    image: gallery3?gallery3:null,
     title: 'Çalışma alanları',
   },
   {
     id: 4,
-    image: gallery4,
+    image: gallery4?gallery4:null,
     title: 'Oda-2',
   },
   {
     id: 6,
-    image: gallery6,
+    image: gallery6?gallery6:null,
     title: 'Ortak alanlar',
   },
   {
     id: 5,
-    image: gallery5,
+    image: gallery5?gallery5:null,
     title: 'Oda-3',
   },
 ];

@@ -6,10 +6,14 @@ import Sticky from 'react-stickynode';
 import Logo from 'components/logo';
 import { NavLink } from 'components/link';
 import menuItems from './header.data';
+import { useRouter } from 'next/router';
+import Link from 'next/link'
 
 export default function Header() {
   const [mobileMenu, setMobileMenu] = useState(false);
 
+  const router = useRouter()
+  const isHome = router.pathname == '/'
   const toggleMobileMenu = () => {
     setMobileMenu(!mobileMenu);
   };
@@ -24,6 +28,7 @@ export default function Header() {
 
   return (
     <Box sx={styles.headerWrapper}>
+
       <Sticky enabled={true} top={0} activeClass="is-sticky" innerZ={10}>
         <Box
           as="header"
@@ -46,11 +51,15 @@ export default function Header() {
                 >
                   {menuItems.map(({ path, label }, i) => (
                     <li key={i}>
-                      <NavLink
+                      {isHome ? <NavLink
                         path={path}
                         label={label}
                         onClick={closeMobileMenu}
-                      />
+                      /> : <Link href='/' onClick={closeMobileMenu}>
+                        <a style={{
+                          color: 'white', lineHeigh: '1.5', fontWeight: 'normal', boxSizing: 'border-box',
+                          listStyle: 'none', textDecoration: 'none', ':hover':{cursor:'pointer'}, marginRight: '2.8em',
+                        }}>{label}</a></Link>}
                     </li>
                   ))}
                 </Box>
@@ -127,8 +136,8 @@ const styles = {
         '&.active': {
           opacity: 1,
           visibility: 'visible',
-          fontWeight:'600',
-          fontSize:'24px'
+          fontWeight: '600',
+          fontSize: '24px'
         },
         ul: {
           display: 'block',
@@ -175,7 +184,7 @@ const styles = {
     minHeight: 'auto',
     width: '32px',
     ml: '3px',
-    backgroundColor:'white',
-    borderRadius:'50%'
+    backgroundColor: 'white',
+    borderRadius: '50%'
   },
 };
