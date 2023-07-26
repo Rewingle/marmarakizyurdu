@@ -72,8 +72,10 @@ const Blog = () => {
        
 
         <Box as={Masonry} options={masonryOptions} sx={styles.galleryWrapper}>
+        <Box sx={{width:'0.1em',height:'0.1em',backgroundColor:'pink',opacity:0,display:['none','none','block','block','block']}}></Box>
         {sss?.map((item,{index})=>(
-         <React.Fragment key={index}><PriceCard question={item.question} answer={item.answer}/></React.Fragment>
+          
+         <PriceCard question={item.question} answer={item.answer}/>
         ))}
     
         </Box>
@@ -92,6 +94,7 @@ const styles = {
   galleryWrapper: {
     mx: '-15px',
     fontSize:'14px'
+
   },
   heading: {
     mb: [30, 30, 30, 50, 60],

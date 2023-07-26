@@ -8,6 +8,7 @@ import { NavLink } from 'components/link';
 import menuItems from './header.data';
 import { useRouter } from 'next/router';
 import Link from 'next/link'
+import { ImPhone } from 'react-icons/im';
 
 export default function Header() {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -49,6 +50,7 @@ export default function Header() {
                   sx={styles.navList}
                   className={mobileMenu ? 'active' : ''}
                 >
+
                   {menuItems.map(({ path, label }, i) => (
                     <li key={i}>
                       {isHome ? <NavLink
@@ -58,10 +60,11 @@ export default function Header() {
                       /> : <Link href='/' onClick={closeMobileMenu}>
                         <a style={{
                           color: 'white', lineHeigh: '1.5', fontWeight: 'normal', boxSizing: 'border-box',
-                          listStyle: 'none', textDecoration: 'none', ':hover':{cursor:'pointer'}, marginRight: '2.8em',
+                          listStyle: 'none', textDecoration: 'none', ':hover': { cursor: 'pointer' }, marginRight: '2.8em',
                         }}>{label}</a></Link>}
                     </li>
                   ))}
+                  <Box sx={{fontSize:'16px',opacity:0.8,display:['flex','flex','none','none','none']}}><ImPhone/><Box sx={{ml:2}}>530 346 47 61</Box></Box>
                 </Box>
                 <Button sx={styles.joinNow} variant="primaryMd">
                   Şimdi başvur

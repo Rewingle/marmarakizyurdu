@@ -3,7 +3,6 @@ import { jsx, Box, Flex, Text, Container } from 'theme-ui';
 import { Link } from 'components/link';
 import Logo from 'components/logo';
 import { rgba } from 'polished';
-import { GrPhone } from 'react-icons/gr'
 import { ImPhone } from 'react-icons/im';
 
 const navItems = [
