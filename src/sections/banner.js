@@ -4,7 +4,7 @@ import { rgba } from 'polished';
 //import Link from 'next/link'
 import { ImPhone } from 'react-icons/im';
 import bannerBg from 'assets/images/banner-bg.jpg';
-import { useNavigate } from 'react-router-dom'
+//import { useNavigate } from 'react-router-dom'
 
 const options = [
   {
@@ -34,7 +34,7 @@ export default function Banner() {
     e.preventDefault();
     console.log('submitting...');
   };
-  const navigate = useNavigate();
+  //const navigate = useNavigate();
   return (
     <Box as="section" id="home" sx={styles.section}>
       <Container>
@@ -50,7 +50,7 @@ export default function Banner() {
             </Text>
             <Box as="form" onSubmit={handleSubmit}>
 
-              <Button type="submit" sx={styles.button} variant="primary" onClick={() => { navigate('https://forms.gle/yenPQNkwLckLQsXX9') }}>
+              <Button type="submit" sx={styles.button} variant="primary" onClick={() => {  }}>
                 Şimdi başvur
               </Button>
 
