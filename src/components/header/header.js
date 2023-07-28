@@ -66,7 +66,7 @@ export default function Header() {
                   ))}
                   
                 </Box>
-                <Button sx={styles.joinNow} variant="primaryMd">
+                <Button sx={styles.joinNow} variant="primaryMd" onClick={()=>{window.open("https://forms.gle/yenPQNkwLckLQsXX9",'_blank')}}>
                   Şimdi başvur
                 </Button>
               </Flex>

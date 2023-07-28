@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx, Box, Container, Heading, Text, Button } from 'theme-ui';
 import { rgba } from 'polished';
+import { Link } from 'react-router-dom';
 //import Link from 'next/link'
 import { ImPhone } from 'react-icons/im';
 import bannerBg from 'assets/images/banner-bg.jpg';
@@ -44,13 +45,14 @@ export default function Banner() {
               Kadıköy'ün merkezinde yeni nesil kız yurdu.
             </Heading>
             <Text as="p" sx={styles.desc}>
+              10'a yakın üniversitelere ulaşım kolaylığı ile Kadıköy'ün merkezinde Marmara kız öğrenci yurdu.<br/>
               Ödeme kolaylığı ve 10 taksit imkanı ile
-              yeni dönem kayıtlarımız başlamıştır.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              yeni dönem kayıtlarımız başlamıştır. Ön kayıt avantajlarını kaçırmamak için şimdi başvurabilir veya bizleri arayabilirsiniz.
+              
             </Text>
             <Box as="form" onSubmit={handleSubmit}>
 
-              <Button type="submit" sx={styles.button} variant="primary" onClick={() => {  }}>
+              <Button type="submit" sx={styles.button} variant="primary" onClick={() => { window.open("https://forms.gle/yenPQNkwLckLQsXX9", '_blank') }}>
                 Şimdi başvur
               </Button>
 

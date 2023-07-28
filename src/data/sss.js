@@ -5,7 +5,7 @@ export default [
     },
     {
         question: 'Yurt sadece Marmara üniversitesi öğrencilerine mi hizmet veriyor?',
-        answer: 'Hayır, yurdumuz her üniversite öğrenicisine hizmet vermektedir.'
+        answer: 'Hayır, yurdumuz her üniversite öğrencisine hizmet vermektedir.'
     },
     {
         question: 'Kahvaltı dahil midir?',
