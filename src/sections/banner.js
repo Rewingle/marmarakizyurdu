@@ -1,10 +1,10 @@
 /** @jsx jsx */
 import { jsx, Box, Container, Heading, Text, Button } from 'theme-ui';
 import { rgba } from 'polished';
-
-import Select from 'components/select';
+//import Link from 'next/link'
+import { ImPhone } from 'react-icons/im';
 import bannerBg from 'assets/images/banner-bg.jpg';
-import mapMarker from 'assets/images/icons/map-marker.png';
+import { useNavigate } from 'react-router-dom'
 
 const options = [
   {
@@ -34,7 +34,7 @@ export default function Banner() {
     e.preventDefault();
     console.log('submitting...');
   };
-
+  const navigate = useNavigate();
   return (
     <Box as="section" id="home" sx={styles.section}>
       <Container>
@@ -44,15 +44,17 @@ export default function Banner() {
               Kadıköy'ün merkezinde yeni nesil kız yurdu.
             </Heading>
             <Text as="p" sx={styles.desc}>
-            Ödeme kolaylığı ve 10 taksit imkanı ile
-            yeni dönem kayıtlarımız başlamıştır.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              Ödeme kolaylığı ve 10 taksit imkanı ile
+              yeni dönem kayıtlarımız başlamıştır.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </Text>
             <Box as="form" onSubmit={handleSubmit}>
-           
-              <Button type="submit" sx={styles.button} variant="primary">
+
+              <Button type="submit" sx={styles.button} variant="primary" onClick={() => { navigate('https://forms.gle/yenPQNkwLckLQsXX9') }}>
                 Şimdi başvur
               </Button>
+
+              <Box sx={{ display: 'flex', textAlign: 'center', justifyContent: 'center', alignItems: 'center', mt: 5, fontSize: '18px' }}><ImPhone fontSize="1.2em" style={{ marginRight: '8px' }} /> 530 846 47 61</Box>
             </Box>
           </Box>
         </Box>
@@ -87,15 +89,15 @@ const styles = {
       null,
       null,
       null,
-      '30px 50px 60px',
-      '50px 60px 90px',
+      '30px 50px 20px',
+      '50px 60px 20px',
     ],
     borderRadius: 5,
     m: ['110px 0 0', null, null, '110px auto 0', '60px 0 0', null, 0],
     '@media only screen and (min-height: 720px) and (max-height: 760px), (min-width: 1501px) and (max-width: 1560px) ': {
       maxWidth: 515,
       mt: 70,
-      padding: '30px 50px 65px',
+      padding: '30px 50px 25px',
     },
   },
   heroTitle: {
@@ -126,7 +128,7 @@ const styles = {
     fontSize: 20,
     fontWeight: 700,
     marginTop: 20,
-    fontFamily:'helvetica',
+    fontFamily: 'helvetica',
     width: '100%',
     minHeight: [50, null, null, null, 60],
     fontSize: [16, 16, 16, 20],

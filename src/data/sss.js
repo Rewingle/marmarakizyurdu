@@ -8,7 +8,7 @@ export default [
         answer: 'Hayır, yurdumuz her üniversite öğrenicisine hizmet vermektedir.'
     },
     {
-        question: 'Kahvaltı dahil mi?',
+        question: 'Kahvaltı dahil midir?',
         answer: 'Evet, her sabah kahvaltı çıkmaktadır.'
     },
    

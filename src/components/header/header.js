@@ -66,7 +66,6 @@ export default function Header() {
                   ))}
                   
                 </Box>
-                <Box sx={{fontSize:'16px',opacity:0.8,display:['flex','flex','none','none','none']}}><ImPhone/><Box sx={{ml:2}}>530 346 47 61</Box></Box>
                 <Button sx={styles.joinNow} variant="primaryMd">
                   Şimdi başvur
                 </Button>
