@@ -9,11 +9,11 @@ export default function SEO({
 }) {
   const metaData = [
     {
-      name: `description`,
+      name: `Kadıköyde kız öğrenci yurdu`,
       content: description,
     },
     {
-      property: `og:title`,
+      property: `og:Marmara kız öğrenci yurdu`,
       content: title,
     },
     {
