@@ -1,6 +1,5 @@
 /** @jsx jsx */
 import { jsx, Box, Flex, Text, Container } from 'theme-ui';
-import { Link } from 'components/link';
 import Logo from 'components/logo';
 import { rgba } from 'polished';
 import { ImPhone } from 'react-icons/im';

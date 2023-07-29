@@ -3,40 +3,40 @@ import { jsx, Box, Button, Container, Image } from 'theme-ui';
 import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 import Slider from 'react-slick';
 import SectionHeading from 'components/section-heading';
-import uber from 'assets/images/clients/uber.png';
-import google from 'assets/images/clients/google.png';
-import paypal from 'assets/images/clients/paypal.png';
-import microsoft from 'assets/images/clients/microsoft.png';
-import dribbble from 'assets/images/clients/dribbble.png';
+import yeditepe from 'assets/images/clients/yeditepe.png';
+import bau from 'assets/images/clients/bau.png';
+import medeniyet from 'assets/images/clients/medeniyet.png';
+import maltepe from 'assets/images/clients/maltepe.png';
+import uskudar from 'assets/images/clients/uskudar.png';
 import marmara from 'assets/images/clients/marmara.png';
 import may29 from 'assets/images/clients/29may.png';
-import dogus from 'assets/images/clients/dogus.png';
+//import dogus from 'assets/images/clients/dogus.png';
 import acibadem from 'assets/images/clients/acibadem.png';
 const clients = [
   {
     id: 1,
-    name: 'uber',
-    logo: uber,
+    name: 'Yeditepe üniversitesi',
+    logo: yeditepe,
   },
   {
     id: 2,
-    name: 'Google',
-    logo: google,
+    name: 'Bahçeşehir üniversitesi',
+    logo: bau,
   },
   {
     id: 3,
-    name: 'PayPal',
-    logo: paypal,
+    name: 'Medeniyet üniversitesi',
+    logo: medeniyet,
   },
   {
     id: 4,
-    name: 'Microsoft',
-    logo: microsoft,
+    name: 'Maltepe üniversitesi',
+    logo: maltepe,
   },
   {
     id: 5,
-    name: 'Dribbble',
-    logo: dribbble,
+    name: 'Üsküdar üniversitesi',
+    logo: uskudar,
   },
   {
     id: 6,

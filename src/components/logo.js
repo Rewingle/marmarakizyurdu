@@ -22,7 +22,7 @@ export default function Logo({ white }) {
         }
       }}
     >
-      <Image src={white ? logoWhite : logo} alt="startup landing logo"/>
+      <Image src={white ? logoWhite : logo} alt="landing page"/>
     </Link>
   );
 }

@@ -13,11 +13,11 @@ export default function SEO({
       content: description,
     },
     {
-      property: `og:Marmara kız öğrenci yurdu`,
+      property: `og:Kadıköy Marmara kız öğrenci yurdu`,
       content: title,
     },
     {
-      property: `og:description`,
+      property: `og:Kadıköyde kız öğrenci yurdu`,
       content: description,
     },
     {

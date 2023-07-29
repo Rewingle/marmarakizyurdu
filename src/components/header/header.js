@@ -8,7 +8,6 @@ import { NavLink } from 'components/link';
 import menuItems from './header.data';
 import { useRouter } from 'next/router';
 import Link from 'next/link'
-import { ImPhone } from 'react-icons/im';
 
 export default function Header() {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -73,7 +72,7 @@ export default function Header() {
 
               {mobileMenu ? (
                 <Button variant="text" sx={styles.closeButton}>
-                  <GrClose onClick={closeMobileMenu} size="20px" color='#fff' />
+                  <GrClose onClick={closeMobileMenu} size="20px" color='#fff' style={{':hover':{cursor:'pointer'}}} />
                 </Button>
               ) : (
                 <MenuButton sx={styles.toggleMenu}
@@ -187,6 +186,7 @@ const styles = {
     minHeight: 'auto',
     width: '32px',
     ml: '3px',
+    ':hover':{cursor:'pointer'},
     backgroundColor: 'white',
     borderRadius: '50%'
   },

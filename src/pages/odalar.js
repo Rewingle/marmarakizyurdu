@@ -2,10 +2,9 @@ import React from 'react';
 import { ThemeProvider } from 'theme-ui';
 import theme from 'theme';
 import Layout from 'components/layout';
-import { jsx, Box, Container, Image, Button } from 'theme-ui';
+import { Box, Container } from 'theme-ui';
 import SectionHeading from 'components/section-heading';
 import GalleryCard from 'components/cards/gallery-card';
-import Link from 'next/link';
 import Masonry from 'react-masonry-component';
 import gallery1 from 'assets/images/gallery/1.png';
 import gallery2 from 'assets/images/gallery/2.png';
@@ -62,7 +61,7 @@ function odalar() {
                 sx={styles.heading}
                 title="Bina"
               />
-              {router.pathname}
+            
               <Box as={Masonry} options={masonryOptions} sx={styles.galleryWrapper}>
                 {data?.map((item) => (
                   <GalleryCard key={item.id} item={item} />
