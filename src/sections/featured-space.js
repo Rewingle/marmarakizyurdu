@@ -6,16 +6,15 @@ import SectionHeading from 'components/section-heading';
 import Progressbar from 'components/progressbar';
 import Feature from 'components/cards/feature';
 import Image from 'components/image';
-import users from 'assets/images/icons/users.png';
 import wifi from 'assets/images/icons/wifi.png';
 import study from 'assets/images/icons/study.png';
 import security from 'assets/images/icons/security.png';
 import cleaning from 'assets/images/icons/cleaning.png';
 import iron from 'assets/images/icons/iron.png';
 import shower from 'assets/images/icons/shower.png';
-import slider1 from 'assets/images/features/1.png';
-import slider2 from 'assets/images/features/2.png';
-import slider3 from 'assets/images/features/3.png';
+import slider1 from 'assets/images/features/1.webp';
+import slider2 from 'assets/images/features/2.webp';
+import slider3 from 'assets/images/features/3.webp';
 
 import SwiperCore, { Autoplay, Pagination, EffectFade } from 'swiper';
 // Import Swiper React components

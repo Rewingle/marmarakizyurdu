@@ -1,34 +1,11 @@
 /** @jsx jsx */
 import { jsx, Box, Container, Heading, Text, Button } from 'theme-ui';
 import { rgba } from 'polished';
-import { Link } from 'react-router-dom';
 //import Link from 'next/link'
 import { ImPhone } from 'react-icons/im';
-import bannerBg from 'assets/images/banner-bg.jpg';
+import bannerBg from 'assets/images/banner-bg.webp';
 //import { useNavigate } from 'react-router-dom'
 
-const options = [
-  {
-    id: 1,
-    label: 'Brooklyn, New york',
-    value: 'Brooklyn, New york',
-  },
-  {
-    id: 2,
-    label: 'Atlanta, Georgia',
-    value: 'Atlanta, Georgia',
-  },
-  {
-    id: 3,
-    label: 'Minneapolis, Minnesota',
-    value: 'Minneapolis, Minnesota',
-  },
-  {
-    id: 4,
-    label: 'Chicago, Illinois',
-    value: 'Chicago, Illinois',
-  },
-];
 
 export default function Banner() {
   const handleSubmit = (e) => {

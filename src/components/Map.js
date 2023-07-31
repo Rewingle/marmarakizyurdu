@@ -17,7 +17,7 @@ const university = props.uniDirection
           &q=Osmanağa,+Kıvanç+Sk.+No:1,+34714+Kadıköy/İstanbul&zoom=15">
           </iframe>
       )
-      case 0:
+      case 1:
         return( //MARMARA UNI
           <iframe style={{height:'100%',width:'100%'}}
           src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d6023.3237364923725!2d29.03503782788914!3d40.98888441574456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x14cab86f2961c595%3A0x2f3544d0c2d1b87b!2zSGFsaXRhxJ9hIENkLiBObzoyMywgT3NtYW5hxJ9hLCAzNDcxNCBLYWTEsWvDtnkvxLBzdGFuYnVs!3m2!1d40.9918895!2d29.0287263!4m5!1s0x14cac78dac1ac9a3%3A0xbd47329deac1fedf!2zRcSfaXRpbSwgTWFybWFyYSDDnG52LiBHw7Z6dGVwZSBZZXJsZcWfa2VzaSwgRmFocmV0dGluIEtlcmltIEfDtmtheSBDZC4sIDM0NzIyIEthZMSxa8O2eS_EsHN0YW5idWw!3m2!1d40.9852209!2d29.052657399999998!5e0!3m2!1str!2str!4v1668003420367!5m2!1str!2str" 
@@ -26,7 +26,7 @@ const university = props.uniDirection
           referrerPolicy="no-referrer-when-downgrade"></iframe>
           
         )
-      case 1:
+      case 2:
         return( //USKUDAR
           <iframe style={{height:'100%',width:'100%'}}
           src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d24086.106400994217!2d29.015198627658087!3d41.008553709858305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x14cab86f2bbd4cb9%3A0x7ab3e4bbaf49e753!2zT3NtYW5hxJ9hLCBLxLF2YW7DpyBTay4gTm86MSwgMzQ3MTQgS2FkxLFrw7Z5L8Swc3RhbmJ1bA!3m2!1d40.991901399999996!2d29.0287617!4m5!1s0x14cab7e4b9b96af1%3A0x78ef20ea9ab0de2a!2zQWx0dW5pemFkZSwgw5xza8O8ZGFyIMOcbml2ZXJzaXRlc2kgTWVya2V6IFllcmxlxZ9rZSwgSGFsdWsgVMO8cmtzb3kgU29rLiBObzoxNCwgMzQ2NjIgw5xza8O8ZGFyL8Swc3RhbmJ1bA!3m2!1d41.0249642!2d29.0388277!5e0!3m2!1str!2str!4v1668785219770!5m2!1str!2str" 
@@ -34,7 +34,7 @@ const university = props.uniDirection
           loading="lazy" 
           referrerPolicy="no-referrer-when-downgrade"></iframe>
         )
-      case 2:
+      case 0:
         return( // ACIBADEM
           <iframe style={{height:'100%',width:'100%'}} 
           src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d24092.51969950877!2d29.05038387763334!3d40.99100601859528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x14cab86f2bbd4cb9%3A0x7ab3e4bbaf49e753!2zT3NtYW5hxJ9hLCBLxLF2YW7DpyBTay4gTm86MSwgMzQ3MTQgS2FkxLFrw7Z5L8Swc3RhbmJ1bA!3m2!1d40.991901399999996!2d29.0287617!4m5!1s0x14cac5f628de91b5%3A0x40c99806cc2dff20!2zxLDDp2VyZW5rw7Z5LCBBY8SxYmFkZW0gw5xuaXZlcnNpdGVzaSwgS2F5xLHFn2RhxJ_EsSBDYWRkZXNpLCBBdGHFn2VoaXIvxLBzdGFuYnVs!3m2!1d40.978446999999996!2d29.110259499999998!5e0!3m2!1str!2str!4v1668792457534!5m2!1str!2str" 

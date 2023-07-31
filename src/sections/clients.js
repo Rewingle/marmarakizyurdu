@@ -14,6 +14,11 @@ import may29 from 'assets/images/clients/29may.png';
 import acibadem from 'assets/images/clients/acibadem.png';
 const clients = [
   {
+    id: 0,
+    name: 'Acıbadem Üniversitesi',
+    logo: acibadem,
+  },
+  {
     id: 1,
     name: 'Yeditepe üniversitesi',
     logo: yeditepe,
@@ -45,12 +50,6 @@ const clients = [
   },
   {
     id: 7,
-    name: 'Acıbadem Üniversitesi',
-    logo: acibadem,
-  },
- 
-  {
-    id: 8,
     name: '29 Mayıs Üniversitesi',
     logo: may29,
   },
@@ -65,9 +64,9 @@ function SlickArrow({ className, onClick, control }) {
       onClick={onClick}
     >
       {control === 'prev' ? (
-        <BsArrowLeft size="32px" />
+        <BsArrowLeft size="32px" style={{marginRight:'1em'}}/>
       ) : (
-        <BsArrowRight size="32px" />
+        <BsArrowRight size="32px" style={{marginLeft:'1em'}}/>
       )}
     </Button>
   );

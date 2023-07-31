@@ -1,16 +1,10 @@
 /** @jsx jsx */
 import { useState } from 'react';
-import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
-import { jsx, Grid, Box, Container, Flex, Button,Select} from 'theme-ui';
-import Masonry from 'react-masonry-component';
+import { jsx, Box, Container, Flex, Button,Select} from 'theme-ui';
 import SectionHeading from 'components/section-heading';
-import PriceCard from 'components/cards/price-card';
 import Map from 'components/Map'
-import { padding, rgba } from 'polished';
+import { rgba } from 'polished';
 import { keyframes } from '@emotion/core';
-import userIcon from 'assets/images/icons/two-users.png';
-import userIcon2 from 'assets/images/icons/three-users.png';
-import Link from 'next/link';
 
 
 
@@ -18,7 +12,7 @@ const Pricing = () => {
 
   const [uniDirection,setUniDirection] = useState(null)
   const [selectedUni,setSelectedUni] = useState(null)
-  const Universities =['Marmara Üniversitesi','Üsküdar Üniversitesi','Acıbadem Üniversitesi','Yeditepe Üniversitesi','Maltepe Üniversitesi','Bahçeşehir Üniversitesi','29 Mayıs Üniversitesi']
+  const Universities =['Acıbadem Üniversitesi','Marmara Üniversitesi','Üsküdar Üniversitesi','Yeditepe Üniversitesi','Maltepe Üniversitesi','Bahçeşehir Üniversitesi','29 Mayıs Üniversitesi']
   const masonryOptions = {
     transitionDuration: 0,
   };

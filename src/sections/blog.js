@@ -1,13 +1,8 @@
 /** @jsx jsx */
 import { jsx, Box, Container, Button } from 'theme-ui';
-import Slider from 'react-slick';
 import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 import SectionHeading from 'components/section-heading';
-import BlogPost from 'components/cards/blog-card';
 import PriceCard from 'components/cards/price-card';
-import thumb1 from 'assets/images/blog/1.png';
-import thumb2 from 'assets/images/blog/2.png';
-import thumb3 from 'assets/images/blog/3.png';
 import Masonry from 'react-masonry-component';
 import sss from '../data/sss'
 
