@@ -1,4 +1,4 @@
-/** @jsx jsx */
+
 import { jsx, Box, Container, MenuButton, Flex, Button } from 'theme-ui';
 import { useState } from 'react';
 import { GrClose } from 'react-icons/gr';

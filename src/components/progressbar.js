@@ -1,4 +1,4 @@
-/** @jsx jsx */
+
 import { jsx, Box } from 'theme-ui';
 import Image from 'components/image';
 import play from 'assets/images/icons/play.png';

@@ -1,4 +1,3 @@
-/** @jsx jsx */
 import { jsx, Box, Label, Image, Select as SelectBox } from 'theme-ui';
 import { rgba } from 'polished';
 

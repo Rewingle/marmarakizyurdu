@@ -1,4 +1,3 @@
-/** @jsx jsx */
 import { jsx, Box, Flex, Text, Container } from 'theme-ui';
 import Logo from 'components/logo';
 import { rgba } from 'polished';

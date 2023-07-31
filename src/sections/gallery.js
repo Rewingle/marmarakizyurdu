@@ -1,4 +1,4 @@
-/** @jsx jsx */
+
 import { jsx, Box, Container, Image, Button } from 'theme-ui';
 import { RiArrowRightSLine } from 'react-icons/ri';
 import Masonry from 'react-masonry-component';

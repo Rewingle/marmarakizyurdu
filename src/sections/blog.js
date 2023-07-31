@@ -1,4 +1,4 @@
-/** @jsx jsx */
+
 import { jsx, Box, Container, Button } from 'theme-ui';
 import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 import SectionHeading from 'components/section-heading';

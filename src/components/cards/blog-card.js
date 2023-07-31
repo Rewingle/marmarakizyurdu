@@ -1,4 +1,4 @@
-/** @jsx jsx */
+
 import { jsx, Box, Flex, Image, Heading, Text } from 'theme-ui';
 import { Link } from 'components/link';
 import { rgba } from 'polished';

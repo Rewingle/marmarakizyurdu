@@ -1,4 +1,4 @@
-/** @jsx jsx */
+
 import { rgba } from 'polished';
 import { useState, useRef, useEffect } from 'react';
 import { jsx, Box, Container, Heading, Text } from 'theme-ui';

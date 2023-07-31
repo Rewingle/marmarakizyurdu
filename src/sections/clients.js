@@ -1,4 +1,4 @@
-/** @jsx jsx */
+
 import { jsx, Box, Button, Container, Image } from 'theme-ui';
 import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 import Slider from 'react-slick';

@@ -1,8 +1,5 @@
-/** @jsx jsx */
-import { jsx, Box, Heading, Image, Text,Flex } from 'theme-ui';
-import { IoMdCheckmarkCircle } from 'react-icons/io';
-import { IoIosCloseCircle } from 'react-icons/io';
-import { BsArrowRightShort } from 'react-icons/bs';
+
+import { jsx, Box,} from 'theme-ui';
 import { rgba } from 'polished';
 
 const PriceCard = (props) => {
