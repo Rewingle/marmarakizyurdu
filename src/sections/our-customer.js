@@ -17,9 +17,9 @@ const OurCustomer = () => {
               sx={styles.heading}
               title="Hakkımızda"
               description="Dünyada kalite standartlarını uygulayan yurdumuz, 
-              öğrencilere sunduğu geniş imkanlarla ön plana çıkmaktadır. 
+              yeni nesil öğrenci yurdu anlayışımız ile öğrencilere sunduğu geniş imkanlarla ön plana çıkmaktadır. 
               Bir öğrencinin üniversite hayatı boyunca karşılaştığı en önemli sorunlarından biri konaklamadır. 
-              Çünkü öğrencilerin başarılı bir üniversite hayatı geçirmeleri için en değerli sermayelerinden birisi olası zamanlarını çok verimli kullanmaları gerekmektedir."
+              Çünkü öğrencilerin üniversite hayatlarında başarılı olmak için en değerli sermayelerinden biri zamanlarını iyi kullanmalarıdır."
             />
             <Text as="p" sx={{fontSize:17,lineHeight: 2.07,textAlign: ['center', 'center', 'center', 'left'],maxWidth:580}}> 2023 senesinde Marmara kız öğrenci yurdu, Kadıköyde tam kapasite ile öğrencilerin bu önemli ihtiyaçlarını karşılamak amacıyla faaliyete geçmiştir.
             Sahip olduğumuz geniş imkanlar ile öğrencilere eğitim hayatları boyunca yanlarında olmaya devam edeceğiz."</Text>
