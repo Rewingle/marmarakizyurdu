@@ -7,7 +7,7 @@ import Progressbar from 'components/progressbar';
 import Feature from 'components/cards/feature';
 import Image from 'components/image';
 import wifi from 'assets/images/icons/wifi.png';
-import study from 'assets/images/icons/study.png';
+import study from 'assets/images/icons/office.png';
 import security from 'assets/images/icons/security.png';
 import cleaning from 'assets/images/icons/cleaning.png';
 import iron from 'assets/images/icons/iron.png';
@@ -15,6 +15,8 @@ import shower from 'assets/images/icons/shower.png';
 import slider1 from 'assets/images/features/1.webp';
 import slider2 from 'assets/images/features/2.webp';
 import slider3 from 'assets/images/features/3.webp';
+import breakfast from 'assets/images/icons/breakfast.png'
+
 
 import SwiperCore, { Autoplay, Pagination, EffectFade } from 'swiper';
 // Import Swiper React components
@@ -28,7 +30,7 @@ const data = {
       id: 1,
       icon: wifi,
       title: 'Yüksek hızlı internet',
-      description: '',
+      description: '50 mbps sınırsız internet hizmeti',
     },
     {
       id: 2,
@@ -40,7 +42,7 @@ const data = {
       id: 3,
       icon: study,
       title: 'Çalışma alanları',
-      description: '',
+      description: 'Geniş ve ferah konforlu ortak çalışma alanları',
     },
     {
       id: 4,
@@ -59,6 +61,12 @@ const data = {
       icon: shower,
       title: '7/24 Sıcak su',
       description: '',
+    },
+    {
+      id:7,
+      icon: breakfast,
+      title: 'Kahvaltı',
+      description: 'Her sabah açık büfe kahvaltı'
     }
    
   ],
@@ -131,7 +139,7 @@ const FeaturedSpace = () => {
           <Box sx={styles.leftContent}>
             <SectionHeading
               sx={styles.heading}
-              title="Hizmetlerimiz;"
+              title="Hizmetlerimiz"
               description=""
             />
             <Box sx={styles.featureWrapper}>

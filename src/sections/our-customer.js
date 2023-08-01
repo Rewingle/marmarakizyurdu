@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Box, Container, Image, Flex, Link } from 'theme-ui';
+import { jsx, Box, Container, Image, Flex, Link,Text } from 'theme-ui';
 import { RiArrowRightSLine } from 'react-icons/ri';
 import SectionHeading from 'components/section-heading';
 //import customer from 'assets/images/customer.png';
@@ -10,20 +10,22 @@ const OurCustomer = () => {
       <Container>
         <Flex sx={styles.contentWrapper}>
           <Flex as="figure" sx={styles.illustration}>
-            
+            {/* <Image loading='lazy' src='' alt='hakkımızda' /> */}
           </Flex>
           <Box sx={styles.rightContent}>
             <SectionHeading
               sx={styles.heading}
-              title="Uzman kadromuz ile tanışın."
-              description="Birbirinden deneyimli her alanda size yardımcı olmaya hazır kadromuz."
+              title="Hakkımızda"
+              description="Dünyada kalite standartlarını uygulayan yurdumuz, 
+              öğrencilere sunduğu geniş imkanlarla ön plana çıkmaktadır. 
+              Bir öğrencinin üniversite hayatı boyunca karşılaştığı en önemli sorunlarından biri konaklamadır. 
+              Çünkü öğrencilerin başarılı bir üniversite hayatı geçirmeleri için en değerli sermayelerinden birisi olası zamanlarını çok verimli kullanmaları gerekmektedir."
             />
-            <Box sx={{ textAlign: ['center', 'center', 'center', 'left'] }}>
-              <Link variant="links.learnMore" sx={styles.link} href="#!">
-                Daha fazlası <RiArrowRightSLine size="20px" />
-              </Link>
-            </Box>
+            <Text as="p" sx={{fontSize:17,lineHeight: 2.07,textAlign: ['center', 'center', 'center', 'left'],maxWidth:580}}> 2023 senesinde Marmara kız öğrenci yurdu, Kadıköyde tam kapasite ile öğrencilerin bu önemli ihtiyaçlarını karşılamak amacıyla faaliyete geçmiştir.
+            Sahip olduğumuz geniş imkanlar ile öğrencilere eğitim hayatları boyunca yanlarında olmaya devam edeceğiz."</Text>
+            
           </Box>
+          <Box></Box>
         </Flex>
       </Container>
     </Box>

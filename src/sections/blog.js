@@ -61,8 +61,8 @@ const Blog = () => {
    
         <SectionHeading
           sx={styles.heading}
-          slogan="Sıkça Sorulan Sorular"
-          title="S.S.S"
+          slogan="S.S.S"
+          title="Sıkça Sorulan Sorular"
         />
        
 

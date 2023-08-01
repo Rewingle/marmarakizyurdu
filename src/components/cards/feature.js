@@ -7,7 +7,8 @@ const Feature = ({ data: feature }) => {
   return (
     <Box key={feature.id} sx={styles.featureItem}>
       <Image loading="lazy" src={feature.icon} alt={feature.title} />
-      <Heading as="h3">{feature.title}</Heading>
+      <Heading as="h2">{feature.title}</Heading>
+      <br/>
       <Text as="p">{feature.description}</Text>
     </Box>
   );
@@ -17,7 +18,10 @@ export default Feature;
 
 const styles = {
   featureItem: {
-    textAlign: ['center', null, null, null, 'left'],
+    boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
+    padding:'14px',
+    borderRadius:'1em',
+    textAlign: ['center', null, null, null, 'center'],
     h3: {
       lineHeight: 2.5,
       fontWeight: 500,
