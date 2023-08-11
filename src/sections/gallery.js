@@ -5,46 +5,14 @@ import Masonry from 'react-masonry-component';
 import SectionHeading from 'components/section-heading';
 import GalleryCard from 'components/cards/gallery-card';
 import Link from 'next/link';
-import gallery1 from 'assets/images/gallery/1.webp';
-import gallery2 from 'assets/images/gallery/2.webp';
-import gallery3 from 'assets/images/gallery/3.webp';
-import gallery4 from 'assets/images/gallery/4.webp';
-import gallery5 from 'assets/images/gallery/5.webp';
-import gallery6 from 'assets/images/gallery/6.webp';
+import gallery1 from 'assets/images/gallery/Render2.webp';
+import gallery2 from 'assets/images/gallery/Render3.webp';
+import gallery3 from 'assets/images/gallery/Render4.webp';
+import gallery4 from 'assets/images/gallery/Render5.webp';
+import gallery5 from 'assets/images/gallery/Render6.webp';
+import gallery6 from 'assets/images/gallery/Render7.webp';
 import renderBg from 'assets/images/gallery/Render1.webp';
 
-const data = [
-  {
-    id: 1,
-    image: gallery1?gallery1:null,
-    title: 'Oda-1',
-  },
-  {
-    id: 2,
-    image: gallery2?gallery2:null,
-    title: 'Banyo',
-  },
-  {
-    id: 3,
-    image: gallery3?gallery3:null,
-    title: 'Çalışma alanları',
-  },
-  {
-    id: 4,
-    image: renderBg?renderBg:null,
-    title: 'Oda-2',
-  },
-  {
-    id: 6,
-    image: gallery6?gallery6:null,
-    title: 'Ortak alanlar',
-  },
-  {
-    id: 5,
-    image: gallery5?gallery5:null,
-    title: 'Oda-3',
-  },
-];
 
 const masonryOptions = {
   transitionDuration: 0,
@@ -56,43 +24,46 @@ const Gallery = () => {
       <Container sx={styles.container}>
         <SectionHeading
           sx={styles.heading}
-          slogan="Odalar"
-          title=" Yeni nesil odalar ve ortak alanlar"
+          slogan=""
+          title=" Galeri"
         />
 
         <Box as={Masonry} options={masonryOptions} sx={styles.galleryWrapper}>
         
-          <GalleryCard  item={{
-            id: 1,
-            image: gallery1,
-            title: 'Oda-1'
-          }} />
+          
           <GalleryCard item={{
             id: 2,
             image: gallery2,
-            title: 'Banyo'
+            title: ''
           }} />
 
           <GalleryCard  item={{
             id: 3,
             image: gallery3,
-            title: 'Çalışma alanları',
+            title: '',
           }} />
           <GalleryCard  item={{
             id: 4,
-            image: renderBg,
-            title: 'Oda-2',
+            image: gallery4,
+            title: '',
           }} />
           <GalleryCard  item={{
             id: 5,
-            image: gallery5,
-            title: 'Oda-3',
+            image: renderBg,
+            title: '',
           }} />
           <GalleryCard  item={{
             id: 6,
-            image: gallery6,
-            title: 'Ortak alanlar',
+            image: gallery5,
+            title: '',
           }} />
+         
+          <GalleryCard  item={{
+            id: 7,
+            image: gallery6,
+            title: '',
+          }} />
+         
 
         </Box>
         <Link href="/odalar"><a>

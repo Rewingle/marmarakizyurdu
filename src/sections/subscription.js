@@ -9,7 +9,7 @@ const Subscription = () => {
     console.log(`Submitted...`);
   };
   return (
-    <Box as="section" sx={styles.section}>
+    <Box id='iletisim' as="section" sx={styles.section}>
       <Container>
         <Box sx={styles.content}>
           <SectionHeading

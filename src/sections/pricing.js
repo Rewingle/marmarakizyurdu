@@ -80,7 +80,7 @@ const fadeIn2 = keyframes`
 
 const styles = {
   section: {
-    backgroundColor: '#020718',
+
     pt: [30],
     pb: [20, 25, 30, 40],
   },
@@ -88,26 +88,28 @@ const styles = {
     color: '#fff',
     mb: 20,
     p: {
-      color: '#fff',
+      
       fontSize:'28px',
       fontFamily: 'DM Sans,sans-serif'
     },
   },
   selectStyle:{
     mb: [3,3,0,0,0],
-    color:'white',
+   
     
   },
   uniSelect:{
-    
     justifyContent:'center',
     display:'flex',
-    color:'white',
+    p:1,
     fontSize:'20px',
+    boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px', borderRadius: '1em',
+    mb:3,
     ':hover':{
       backgroundColor: 'purple',
       cursor:'pointer',
-      borderRadius:'8px'
+      borderRadius:'8px',
+      color:'white'
     }
   },
   contentWrapper: {
@@ -123,7 +125,7 @@ const styles = {
   },
   mapWrapper:{
     width:['20em','25em','40em','60em','90em'],
-    height:['20em','28em','28em','28em','28em']
+    height:['20em','28em','28em','28em','32em']
   },
   illustration: {
     alignItems: ['flex-start'],
@@ -146,7 +148,7 @@ const styles = {
     marginLeft: 0,
     maxWidth: 580,
     pl: ['0em','2em','2em','2em','2em'],
-    color:'white',
+   
     m: ['0 auto 27px', '0 auto 27px', '0 auto 27px', '0 0 30px'],
     h2: {
       fontSize: [22, 22, 22, 28, 30, 36, 46],
@@ -169,7 +171,7 @@ const styles = {
       px: ['18px', '18px', '18px', '25px'],
       fontSize: [14, 14, 14, 16],
       fontWeight: 500,
-      color: 'white',
+    
       '&.active': {
         backgroundColor: '#fff',
         color: 'text',

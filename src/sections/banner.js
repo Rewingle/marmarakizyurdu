@@ -9,7 +9,10 @@ import bannerBg from 'assets/images/banner-bg.webp';
 
 import render1 from 'assets/images/gallery/Render1.webp';
 import render2 from 'assets/images/gallery/Render2.webp';
-import render3 from 'assets/images/gallery/Render3.webp';
+import banner1 from 'assets/images/banner1.webp';
+import banner2 from 'assets/images/banner2.webp'
+import banner3 from 'assets/images/banner3.webp'
+
 //import { useNavigate } from 'react-router-dom'
 import SwiperCore, { Autoplay, Pagination, EffectFade } from 'swiper';
 // Import Swiper React components
@@ -54,59 +57,61 @@ export default function Banner() {
   const slideGallery = [
     {
       id: 1,
-      image: render1,
-      title: 'Kartlı giriş sistemi',
+      image: banner1,
+      title: '',
       alt: '',
     },
-    {
-      id: 2,
-      image: render2,
-      title: 'Resepsiyon',
-      alt: '',
-    },
+
     {
       id: 3,
-      image: render3,
-      title: 'Açık büfe kahvaltı',
+      image: banner2,
+      title: '',
       alt: '',
     },
+    {
+      id: 4,
+      image: banner3,
+      title: '',
+      alt: '',
+    },
+
   ]
   //const navigate = useNavigate();
   return (
-    <Box>
+    <Box id="home" as="section" sx={styles.section}>
+      <Box>
 
-      <Swiper
-        loop={true}
-        effect="fade"
-        ref={swiperRef}
-        spaceBetween={0}
-        slidesPerView={1}
-        pagination={true}
-        style={{ width: '100%',backgroundColor:'#10132d' }}
-      >
-        {slideGallery?.map((item) => (
-          <SwiperSlide key={item.id}>
-            <Box as="figure" sx={styles.image}>
-              <Image loading="lazy" src={item.image} alt={item.alt} sx={{height:[null,null,null,null,'960px'],width:'100%'}} />
+        <Swiper
+          loop={true}
+          effect="fade"
+          ref={swiperRef}
+          spaceBetween={0}
+          slidesPerView={1}
+          pagination={true}
+          style={{ width: '100%' }}
+        >
+          {slideGallery?.map((item) => (
+            <SwiperSlide key={item.id}>
+              <Box as="figure" sx={styles.image}>
+                <Image loading="lazy" src={item.image} alt={item.alt} sx={{ height: [null, null, null, null, '620px'], boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 10px', width: ['100%', '90%', '90%', '80%', '80%'], marginTop: ['4em', '4em', '4em', '10em', '10em'] }} />
 
-            </Box>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+              </Box>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </Box>
     </Box>
   );
 }
 
 const styles = {
   section: {
-    background: `url(${bannerBg}) no-repeat center top / cover`,
-    backgroundSize: ['100%', null, null, null, 'cover'],
-    minHeight: [null, null, null, null, '50vh', '100vh'],
+    
   },
   contentWrapper: {
     display: 'flex',
     alignItems: 'center',
-    minHeight: [null, null, null, null, '50vh', '100vh'],
+    minHeight: [null, null, null, null, '50vh', '60vh'],
   },
   bannerContent: {
     backgroundColor: rgba('#fff', 0.93),
@@ -146,8 +151,10 @@ const styles = {
   },
   image: {
     position: 'relative',
-
-    minHeight: [null, null, null, null, '50vh', '100vh'],
+    height: [null, null, null, null, '620px'],
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center'
 
 
   },

@@ -4,23 +4,31 @@ export default [
     label: 'Anasayfa',
   },
   {
-    path: 'clients',
-    label: 'Üniversiteler',
+    path: 'hakkimizda',
+    label: 'Hakkımızda',
   },
   {
-    path: 'feature',
+    path: 'odalarimiz',
+    label: 'Odalarımız',
+  },
+  {
+    path: 'hizmetler',
     label: 'Hizmetler',
   },
   {
     path: 'gallery',
-    label: 'Odalar',
+    label: 'Galeri',
+  },
+  {
+    path: 'blog',
+    label: 'S.S.S',
   },
   {
     path: 'pricing',
     label: 'Ulaşım',
   },
   {
-    path: 'blog',
-    label: 'S.S.S',
-  },
+    path: 'iletisim',
+    label: 'İletişim',
+  }
 ];
