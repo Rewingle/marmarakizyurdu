@@ -11,7 +11,7 @@ import gallery3 from 'assets/images/gallery/3.webp';
 import gallery4 from 'assets/images/gallery/4.webp';
 import gallery5 from 'assets/images/gallery/5.webp';
 import gallery6 from 'assets/images/gallery/6.webp';
-
+import renderBg from 'assets/images/gallery/Render1.webp';
 
 const data = [
   {
@@ -31,7 +31,7 @@ const data = [
   },
   {
     id: 4,
-    image: gallery4?gallery4:null,
+    image: renderBg?renderBg:null,
     title: 'Oda-2',
   },
   {
@@ -80,7 +80,7 @@ const Gallery = () => {
           }} />
           <GalleryCard  item={{
             id: 4,
-            image: gallery4,
+            image: renderBg,
             title: 'Oda-2',
           }} />
           <GalleryCard  item={{

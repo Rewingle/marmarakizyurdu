@@ -1,43 +1,98 @@
 /** @jsx jsx */
 import { jsx, Box, Container, Heading, Text, Button } from 'theme-ui';
 import { rgba } from 'polished';
+import { useRef, useEffect, useState } from 'react';
 //import Link from 'next/link'
+import Image from 'components/image';
 import { ImPhone } from 'react-icons/im';
 import bannerBg from 'assets/images/banner-bg.webp';
+
+import render1 from 'assets/images/gallery/Render1.webp';
+import render2 from 'assets/images/gallery/Render2.webp';
+import render3 from 'assets/images/gallery/Render3.webp';
 //import { useNavigate } from 'react-router-dom'
+import SwiperCore, { Autoplay, Pagination, EffectFade } from 'swiper';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+SwiperCore.use([Autoplay, Pagination, EffectFade]);
 
 
 export default function Banner() {
+  const isPause = useRef(false);
+  const [currentWidth, setCurrentWidth] = useState(0);
+  let time = 3;
+  let tick, percentTime;
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('submitting...');
   };
+  const swiperRef = useRef(null);
+  function startProgressbar() {
+    resetProgressbar();
+    percentTime = 0;
+    tick = setInterval(interval, 10);
+  }
+  function interval() {
+    if (isPause.current === false) {
+      percentTime += 1 / (time + 0.1);
+      setCurrentWidth(percentTime);
+      if (percentTime >= 100) {
+        swiperRef?.current?.swiper?.slideNext();
+        startProgressbar();
+      }
+    }
+  }
+  function resetProgressbar() {
+    setCurrentWidth(0);
+    clearTimeout(tick);
+  }
+  useEffect(() => {
+    startProgressbar();
+  }, []);
+  const slideGallery = [
+    {
+      id: 1,
+      image: render1,
+      title: 'Kartlı giriş sistemi',
+      alt: '',
+    },
+    {
+      id: 2,
+      image: render2,
+      title: 'Resepsiyon',
+      alt: '',
+    },
+    {
+      id: 3,
+      image: render3,
+      title: 'Açık büfe kahvaltı',
+      alt: '',
+    },
+  ]
   //const navigate = useNavigate();
   return (
-    <Box as="section" id="home" sx={styles.section}>
-      <Container>
-        <Box sx={styles.contentWrapper}>
-          <Box sx={styles.bannerContent}>
-            <Heading as="h1" sx={styles.heroTitle}>
-              Kadıköy'ün merkezinde yeni nesil kız yurdu.
-            </Heading>
-            <Text as="p" sx={styles.desc}>
-              10'a yakın üniversitelere ulaşım kolaylığı ile Kadıköy'ün merkezinde Marmara kız öğrenci yurdu.<br/>
-              Ödeme kolaylığı ve 10 taksit imkanı ile
-              yeni dönem kayıtlarımız başlamıştır. Ön kayıt avantajlarını kaçırmamak için şimdi başvurabilir veya bizleri arayabilirsiniz.
-              
-            </Text>
-            <Box as="form" onSubmit={handleSubmit}>
+    <Box>
 
-              <Button type="submit" sx={styles.button} variant="primary" onClick={() => { window.open("https://forms.gle/yenPQNkwLckLQsXX9", '_blank') }}>
-                Şimdi başvur
-              </Button>
+      <Swiper
+        loop={true}
+        effect="fade"
+        ref={swiperRef}
+        spaceBetween={0}
+        slidesPerView={1}
+        pagination={true}
+        style={{ width: '100%',backgroundColor:'#10132d' }}
+      >
+        {slideGallery?.map((item) => (
+          <SwiperSlide key={item.id}>
+            <Box as="figure" sx={styles.image}>
+              <Image loading="lazy" src={item.image} alt={item.alt} sx={{height:[null,null,null,null,'960px'],width:'100%'}} />
 
-              <Box sx={{ display: 'flex', textAlign: 'center', justifyContent: 'center', alignItems: 'center', mt: 5, fontSize: '18px' }}><ImPhone fontSize="1.2em" style={{ marginRight: '8px' }} /> 530 846 47 61</Box>
             </Box>
-          </Box>
-        </Box>
-      </Container>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </Box>
   );
 }
@@ -46,6 +101,7 @@ const styles = {
   section: {
     background: `url(${bannerBg}) no-repeat center top / cover`,
     backgroundSize: ['100%', null, null, null, 'cover'],
+    minHeight: [null, null, null, null, '50vh', '100vh'],
   },
   contentWrapper: {
     display: 'flex',
@@ -87,6 +143,13 @@ const styles = {
     '@media only screen and (min-height: 720px) and (max-height: 760px), (min-width: 1501px) and (max-width: 1560px) ': {
       fontSize: 40,
     },
+  },
+  image: {
+    position: 'relative',
+
+    minHeight: [null, null, null, null, '50vh', '100vh'],
+
+
   },
   desc: {
     fontSize: [15, 16, 15, 17],
