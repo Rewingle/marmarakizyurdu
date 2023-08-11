@@ -13,7 +13,7 @@ import Subscription from 'sections/subscription';
 import Hakkimizda from 'sections/hakkimizda';
 import Odalarimiz from 'sections/odalarimiz';
 import Hizmetler from 'sections/hizmetlerimiz';
-
+import Whatsapp from 'components/whatsapp';
 
 export default function IndexPage() {
   return (
@@ -23,7 +23,7 @@ export default function IndexPage() {
 
       <Layout>
         <SEO title="Marmara kız öğrenci yurdu" />
-
+        <Whatsapp/>
         <Banner />
         <Hakkimizda/>
         <Odalarimiz/>
