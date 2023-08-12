@@ -1,14 +1,9 @@
 /** @jsx jsx */
-import { jsx, Box, Container, Heading, Text, Button } from 'theme-ui';
+import { jsx, Box} from 'theme-ui';
 import { rgba } from 'polished';
 import { useRef, useEffect, useState } from 'react';
 //import Link from 'next/link'
 import Image from 'components/image';
-import { ImPhone } from 'react-icons/im';
-import bannerBg from 'assets/images/banner-bg.webp';
-
-import render1 from 'assets/images/gallery/Render1.webp';
-import render2 from 'assets/images/gallery/Render2.webp';
 import banner1 from 'assets/images/banner1.webp';
 import banner2 from 'assets/images/banner2.webp'
 import banner3 from 'assets/images/banner3.webp'
@@ -59,20 +54,20 @@ export default function Banner() {
       id: 1,
       image: banner1,
       title: '',
-      alt: '',
+      alt: 'kız öğrenci yurdu',
     },
 
     {
       id: 3,
       image: banner2,
       title: '',
-      alt: '',
+      alt: 'kız öğrenci yurdu',
     },
     {
       id: 4,
       image: banner3,
       title: '',
-      alt: '',
+      alt: 'kız öğrenci yurdu',
     },
 
   ]

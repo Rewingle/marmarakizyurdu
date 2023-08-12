@@ -2,7 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 
 export default function SEO({
-  description = 'Kız öğrenci yurdu',
+  description = 'Kadıköy kız öğrenci yurdu',
   author = 'Mehmet Ali Kul',
   meta,
   title = 'Marmara kız öğrenci yurdu',
@@ -17,7 +17,7 @@ export default function SEO({
       content: title,
     },
     {
-      property: `og:Kadıköyde kız öğrenci yurdu`,
+      property: `og:Kadıköy'de kız öğrenci yurdu`,
       content: description,
     },
     {
@@ -53,6 +53,6 @@ export default function SEO({
 
 SEO.defaultProps = {
   lang: `tr`,
-  meta: [],
+  meta: ['kız yurdu','kadıköy','kız öğrenci yurdu','yurt','acıbadem üniversitesi','medeniyet üniversitesi','bahçeşehir üniversitesi','üsküdar üniversitesi','29 mayıs üniversitesi','kadıköy merkez','öğrenci','konaklama','özel yurt'],
   description: `Kadıköy'ün merkezinde kız öğrenci yurdu`,
 };

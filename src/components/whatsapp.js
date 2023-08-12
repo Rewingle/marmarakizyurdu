@@ -6,7 +6,7 @@ function Whatsapp() {
 
     return (
         <a style={styles.whatsapp} href="https://wa.me/message/3GJIVSMAMH7RG1" target="_blank">
-            <Image src={whatsappIcon}></Image>
+            <Image src={whatsappIcon} loading="lazy" alt="whatsapp-icon"></Image>
         
         </a>
     )

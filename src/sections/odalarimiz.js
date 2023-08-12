@@ -2,10 +2,9 @@ import React from 'react'
 import { Box, Container, Text } from 'theme-ui';
 import SectionHeading from 'components/section-heading';
 import Image from 'components/image'
-import gallery1 from 'assets/images/gallery/Render2.webp';
-import gallery2 from 'assets/images/gallery/Render3.webp';
-import gallery3 from 'assets/images/gallery/Render4.webp';
-import gallery4 from 'assets/images/gallery/Render5.webp';
+import gallery1 from 'assets/images/gallery/Render2mini.webp';
+import gallery2 from 'assets/images/gallery/Render3mini.webp';
+import gallery3 from 'assets/images/gallery/Render4mini.webp';
 import library from 'assets/images/icons/book.webp'
 import light from 'assets/images/icons/idea.webp'
 import trash from 'assets/images/icons/trash.webp'
@@ -25,37 +24,44 @@ function Odalarimiz() {
         {
             id: 1,
             icon: library,
-            name: 'Kütüphane'
+            name: 'Kütüphane',
+            alt: 'kütüphane'
         },
         {
             id: 2,
             icon: light,
-            name: 'Okuma ışığı'
+            name: 'Okuma ışığı',
+            alt: 'okuma ışığı'
         },
         {
             id: 3,
             icon: trash,
-            name: 'Çöp kovası'
+            name: 'Çöp kovası',
+            alt: 'çöp kovası'
         },
         {
             id: 4,
             icon: table,
-            name: 'Çalışma masası'
+            name: 'Çalışma masası',
+            alt: 'çalışma masası'
         },
         {
             id: 5,
             icon: hanger,
-            name: 'Gardrop'
+            name: 'Gardrop',
+            alt: 'gardrop'
         },
         {
             id: 6,
             icon: towel,
-            name: 'Yorgan ve yastık'
+            name: 'Yatak tekstili',
+            alt: 'yatak tekstili'
         },
         {
             id: 7,
             icon: credit,
-            name: 'Kartlı giriş sistemi'
+            name: 'Kartlı giriş sistemi',
+            alt: 'kartlı giriş sistemi'
         },
     ]
 
@@ -73,20 +79,20 @@ function Odalarimiz() {
 
 
                         <GalleryCard item={{
-                            id: 2,
+                            id: 1,
                             image: gallery1,
-                            title: ''
+                            title: 'kız yurt odası 1'
                         }} />
 
                         <GalleryCard item={{
-                            id: 3,
+                            id: 2,
                             image: gallery2,
-                            title: '',
+                            title: 'kız yurt odası 2',
                         }} />
                         <GalleryCard item={{
-                            id: 4,
+                            id: 3,
                             image: gallery3,
-                            title: '',
+                            title: 'kız yurt odası 3',
                         }} />
                        
 
