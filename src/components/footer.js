@@ -72,7 +72,7 @@ export default function Footer() {
             </Flex>
             <br/>
             <Box sx={{ ml: 3, ':hover': { cursor: 'pointer' },float:'right'}}><a href='https://www.instagram.com/marmarakizyurdu' style={{textDecoration:'none',color:'white',display:'flex',alignItems:'center',justifyContent:'center'}}>{instagram}<Box sx={{ml:2}}>/marmarakizyurdu</Box></a></Box>
-            <Box sx={{ color: 'white',display:'flex',textAlign:'center',justifyContent:'center',alignItems:'center' }}><ImPhone color='white' fontSize="1.2em" style={{marginRight:'8px'}}/> 530 846 47 61</Box>
+            <Box  onClick={()=>{window.open('tel:05308464761')}} sx={{ color: 'white',display:'flex',textAlign:'center',justifyContent:'center',alignItems:'center' }}><ImPhone color='white' fontSize="1.2em" style={{marginRight:'8px'}}/> 530 846 47 61</Box>
             <Box sx={{ color: 'white',display:'flex',textAlign:'center',justifyContent:'center',alignItems:'center',mt:3 }}>info@marmarakizogrenciyurdu.com</Box>
           </Box>
 
