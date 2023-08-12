@@ -35,7 +35,7 @@ function Odalarimiz() {
         {
             id: 3,
             icon: trash,
-            name: 'Çöp'
+            name: 'Çöp kovası'
         },
         {
             id: 4,

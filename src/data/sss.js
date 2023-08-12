@@ -13,7 +13,7 @@ export default [
     },
     {
         question: 'Yurtta kablosuz internet bağlantısı (Wireless) var mı?',
-        answer: 'Kablosuz sınırsız internet erişimi mevcuttur. Kablosuz internet hizmetleri online ders içindir, oyun oynamak, müzik ve film indirmek için değildir.'
+        answer: 'Kablosuz 50mbps hızında sınırsız internet erişimi mevcuttur. '
     },
     {
         question: 'Yurt odamda hayvan besleyebilir miyim?',
