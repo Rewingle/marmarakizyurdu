@@ -6,12 +6,13 @@ import { Box, Container } from 'theme-ui';
 import SectionHeading from 'components/section-heading';
 import GalleryCard from 'components/cards/gallery-card';
 import Masonry from 'react-masonry-component';
-import gallery1 from 'assets/images/gallery/1.webp';
-import gallery2 from 'assets/images/gallery/2.webp';
-import gallery3 from 'assets/images/gallery/3.webp';
-import gallery4 from 'assets/images/gallery/4.webp';
-import gallery5 from 'assets/images/gallery/5.webp';
-import gallery6 from 'assets/images/gallery/6.webp';
+import gallery1 from 'assets/images/gallery/Render1mini.webp';
+import gallery2 from 'assets/images/gallery/Render2mini.webp';
+import gallery3 from 'assets/images/gallery/Render3mini.webp';
+import gallery4 from 'assets/images/gallery/Render4mini.webp';
+import gallery5 from 'assets/images/gallery/Render5mini.webp';
+import gallery6 from 'assets/images/gallery/Render6mini.webp';
+import gallery7 from 'assets/images/gallery/Render7mini.webp';
 
 function odalar() {
   const data = [
@@ -23,27 +24,32 @@ function odalar() {
     {
       id: 2,
       image: gallery2,
-      title: 'Banyo',
+      title: 'Oda-2',
     },
     {
       id: 3,
       image: gallery3,
-      title: 'Çalışma alanları',
+      title: 'Oda-3',
     },
     {
       id: 4,
       image: gallery4,
-      title: 'Oda-2',
+      title: 'Oda-4',
     },
     {
       id: 6,
-      image: gallery6,
-      title: 'Ortak alanlar',
+      image: gallery5,
+      title: 'Oda-5',
     },
     {
       id: 5,
-      image: gallery5,
-      title: 'Oda-3',
+      image: gallery6,
+      title: 'Oda-6',
+    },
+    {
+      id: 5,
+      image: gallery7,
+      title: 'Oda-7',
     },
   ];
   
