@@ -5,7 +5,8 @@ import SectionHeading from 'components/section-heading';
 import PriceCard from 'components/cards/price-card';
 import Masonry from 'react-masonry-component';
 import sss from '../data/sss'
-
+import {HiStar} from 'react-icons/hi'
+import {HiPlus} from 'react-icons/hi'
 
 
 function SlickArrow({ className, onClick, control }) {
@@ -24,7 +25,9 @@ function SlickArrow({ className, onClick, control }) {
     </Button>
   );
 }
+const expand = ()=>{
 
+}
 const settings = {
   slidesToShow: 3,
   slidesToScroll: 1,
@@ -58,22 +61,24 @@ const Blog = () => {
   return (
     <Box id="blog" as="section" sx={styles.section}>
       <Container>
-   
+
         <SectionHeading
           sx={styles.heading}
           slogan="S.S.S"
           title="Sıkça Sorulan Sorular"
         />
-       
 
-        <Box as={Masonry} options={masonryOptions} sx={styles.galleryWrapper}>
-        <Box sx={{width:'0.1em',height:'0.1em',backgroundColor:'pink',opacity:0,display:['none','none','block','block','block']}}></Box>
-        {sss?.map((item,{index})=>(
-          
-         <PriceCard question={item.question} answer={item.answer}/>
+
+
+        <Box sx={{ width: '0.1em', height: '0.1em', backgroundColor: 'pink', opacity: 0, display: ['none', 'none', 'block', 'block', 'block'] }}></Box>
+        {sss?.map((item, { index }) => (
+          <Box sx={{}}>
+            <Box sx={{display:'flex',fontSize:'18px',p:2,alignItems:'center',fontWeight:'600',borderRadius:'1em',backgroundColor:'lightgray'}}><HiStar/><Box sx={{ml:1}}>{item.question}</Box><Box sx={{marginLeft:'auto',display:'none'}}><HiPlus size={'1.6em'} color='#8D448B'/></Box></Box>
+            <Box sx={{p:1}}>{item.answer}</Box>
+          </Box>
         ))}
-    
-        </Box>
+
+
       </Container>
     </Box>
   );
@@ -88,7 +93,7 @@ const styles = {
   },
   galleryWrapper: {
     mx: '-15px',
-    fontSize:'14px'
+    fontSize: '14px'
 
   },
   heading: {

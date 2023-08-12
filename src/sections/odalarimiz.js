@@ -6,13 +6,13 @@ import gallery1 from 'assets/images/gallery/Render2.webp';
 import gallery2 from 'assets/images/gallery/Render3.webp';
 import gallery3 from 'assets/images/gallery/Render4.webp';
 import gallery4 from 'assets/images/gallery/Render5.webp';
-import library from 'assets/images/icons/book.png'
-import light from 'assets/images/icons/idea.png'
-import trash from 'assets/images/icons/trash.png'
-import towel from 'assets/images/icons/bath-towel.png'
-import hanger from 'assets/images/icons/hanger.png'
-import table from 'assets/images/icons/table.png'
-import credit from 'assets/images/icons/credit.png'
+import library from 'assets/images/icons/book.webp'
+import light from 'assets/images/icons/idea.webp'
+import trash from 'assets/images/icons/trash.webp'
+import towel from 'assets/images/icons/towel.webp'
+import hanger from 'assets/images/icons/hanger.webp'
+import table from 'assets/images/icons/table.webp'
+import credit from 'assets/images/icons/credit.webp'
 import Masonry from 'react-masonry-component';
 import GalleryCard from 'components/cards/gallery-card';
 
@@ -99,7 +99,8 @@ function Odalarimiz() {
                                 <Text as="p" sx={{ fontWeight: '600', fontSize: '22px' }}> Odalarımız 4 kişilik olup, banyolu ve ortak banyolu olarak 2 tip odamız mevcuttur.</Text>
 
                             </Box>
-                            <Box><h3>Oda özellikleri</h3></Box>
+                            <hr/>
+                            <Box sx={{textAlign:'center'}}><h3>Oda özellikleri</h3></Box>
                             <Box sx={{display:'grid', gridTemplateColumns: ['1fr 1fr 1fr',null,null,null,'1fr 1fr 1fr 1fr'],gridGap:'2em'}}>
                                 {features.map((item) => (
                                     <Box sx={{display:'flex'}}><Image src={item.icon} style={{width:'24px',height:'24px'}} /><Box sx={{ml:2}}>{item.name}</Box></Box>
@@ -126,10 +127,10 @@ const styles = {
     section: {
         pt: [30, null, null, null, 60],
         pb: [30, null, null, 50, 60],
+        backgroundColor:'#10132d',
+        color:'white'
     },
     info: {
-
-        backgroundColor: 'white',
         p: 4,
         width: ['100%', null, null, null, '55.3em']
     },

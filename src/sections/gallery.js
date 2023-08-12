@@ -81,8 +81,11 @@ const styles = {
   section: {
     pt: [30, 30, 40, 50, 60],
     pb: [60, 60, 60, 90, 80, 120],
+    backgroundColor:'#10132d'
   },
   heading: {
+    color:'white',
+    fontWeight:'600',
     mb: [30, 30, 40, 60],
   },
   galleryWrapper: {
