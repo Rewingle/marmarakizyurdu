@@ -54,7 +54,7 @@ function Hizmetler() {
         {
             icon: iron,
             name: 'Çamaşırhane(Ütü hizmeti)',
-            desc: 'Çamaşırhane, öğrenci yurtlarında konaklayan tüm öğrencilerin katların yıkama günlerine göre 7/24 kullanıma açıktır.'
+            desc: 'Çamaşırhane ve ütü hizmeti anlaşmalı olduğumuz kurum üzerinden ücretsiz olarak verilmektedir.'
         },
         {
             icon: repair,
