@@ -64,9 +64,9 @@ function SlickArrow({ className, onClick, control }) {
       onClick={onClick}
     >
       {control === 'prev' ? (
-        <BsArrowLeft size="32px" style={{ marginRight: '4em' }} />
+        <BsArrowLeft size="32px" style={{ marginRight: '4em',width:'32px' }} />
       ) : (
-        <BsArrowRight size="32px" style={{ marginLeft: '4em' }} />
+        <BsArrowRight size="32px" style={{ marginLeft: '4em',width:'32px' }} />
       )}
     </Button>
   );
