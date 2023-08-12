@@ -64,9 +64,9 @@ function SlickArrow({ className, onClick, control }) {
       onClick={onClick}
     >
       {control === 'prev' ? (
-        <BsArrowLeft size="32px" style={{marginRight:'1em'}}/>
+        <BsArrowLeft size="32px" style={{ marginRight: '1em' }} />
       ) : (
-        <BsArrowRight size="32px" style={{marginLeft:'1em'}}/>
+        <BsArrowRight size="32px" style={{ marginLeft: '1em' }} />
       )}
     </Button>
   );
@@ -116,7 +116,16 @@ const Clients = () => {
       <Container>
         <SectionHeading
           slogan="Üniversiteler"
-          title="Yakındaki üniversiteler;"
+          title="Anlaşmalı olduğumuz üniversiteler"
+        />
+        <hr/>
+        <Box as="figure" sx={styles.logo}>
+          <Image loading="lazy" src={acibadem} alt='Acıbadem ünivesitesi' />
+        </Box>
+        <hr/>
+        <SectionHeading
+
+          title="Yakındaki üniversiteler"
         />
         <Slider sx={styles.clients} {...settings}>
           {clients?.map((client) => (

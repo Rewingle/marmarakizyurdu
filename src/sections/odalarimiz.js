@@ -2,18 +2,25 @@ import React from 'react'
 import { Box, Container, Text } from 'theme-ui';
 import SectionHeading from 'components/section-heading';
 import Image from 'components/image'
-import Render1 from 'assets/images/gallery/Render1.webp'
-import Render2 from 'assets/images/gallery/Render2.webp'
-import Render3 from 'assets/images/gallery/Render3.webp'
+import gallery1 from 'assets/images/gallery/Render2.webp';
+import gallery2 from 'assets/images/gallery/Render3.webp';
+import gallery3 from 'assets/images/gallery/Render4.webp';
+import gallery4 from 'assets/images/gallery/Render5.webp';
 import library from 'assets/images/icons/book.png'
 import light from 'assets/images/icons/idea.png'
 import trash from 'assets/images/icons/trash.png'
+import towel from 'assets/images/icons/bath-towel.png'
+import hanger from 'assets/images/icons/hanger.png'
+import table from 'assets/images/icons/table.png'
+import credit from 'assets/images/icons/credit.png'
 import Masonry from 'react-masonry-component';
+import GalleryCard from 'components/cards/gallery-card';
+
 
 function Odalarimiz() {
     const masonryOptions = {
         transitionDuration: 0,
-      };
+    };
     const features = [
         {
             id: 1,
@@ -31,19 +38,24 @@ function Odalarimiz() {
             name: 'Çöp'
         },
         {
-            id: 3,
-            icon: trash,
-            name: 'Çöp'
+            id: 4,
+            icon: table,
+            name: 'Çalışma masası'
         },
         {
-            id: 3,
-            icon: trash,
-            name: 'Çöp'
+            id: 5,
+            icon: hanger,
+            name: 'Gardrop'
         },
         {
-            id: 3,
-            icon: trash,
-            name: 'Çöp'
+            id: 6,
+            icon: towel,
+            name: 'Yorgan ve yastık'
+        },
+        {
+            id: 7,
+            icon: credit,
+            name: 'Kartlı giriş sistemi'
         },
     ]
 
@@ -57,33 +69,51 @@ function Odalarimiz() {
                     sx={styles.heading}
                 />
                 <Box sx={styles.contentWrapper}>
-                    <Box sx={styles.leftContent}>
+                    <Box as={Masonry} options={masonryOptions} sx={styles.galleryWrapper}>
 
-                        <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                            <Text as="p"> Odalarımız 4 kişilik olup, banyolu ve ortak banyolu olarak 2 tip odamız mevcuttur.</Text>
 
-                        </Box>
-                        <Box><h4>Oda özellikleri</h4></Box>
-                        <Box as={Masonry} options={masonryOptions} sx={styles.galleryWrapper}>
-                            {features.map((item)=>(
-                                <Box sx={{borderRadius:'1em',border:'2px solid black'}}>{item.name}</Box>
-                            ))}
-                        </Box>
+                        <GalleryCard item={{
+                            id: 2,
+                            image: gallery1,
+                            title: ''
+                        }} />
 
-                    </Box>
-                    <Box sx={styles.rightContent}>
-                        <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                            <Box sx={{width: '512px', height: '256px' }}>
-                                <Image src={Render1} style={{ width: '512px', height: '256px' }} />
+                        <GalleryCard item={{
+                            id: 3,
+                            image: gallery2,
+                            title: '',
+                        }} />
+                        <GalleryCard item={{
+                            id: 4,
+                            image: gallery3,
+                            title: '',
+                        }} />
+                        <GalleryCard item={{
+                            id: 5,
+                            image: gallery4,
+                            title: '',
+                        }} />
+
+                        <Box sx={styles.info}>
+                            <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                <Text as="p" sx={{ fontWeight: '600', fontSize: '22px' }}> Odalarımız 4 kişilik olup, banyolu ve ortak banyolu olarak 2 tip odamız mevcuttur.</Text>
+
                             </Box>
-                        </Box>
-                        <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                            <Box><h3>Oda özellikleri</h3></Box>
+                            <Box sx={{display:'grid', gridTemplateColumns: ['1fr 1fr 1fr',null,null,null,'1fr 1fr 1fr 1fr'],gridGap:'2em'}}>
+                                {features.map((item) => (
+                                    <Box sx={{display:'flex'}}><Image src={item.icon} style={{width:'24px',height:'24px'}} /><Box sx={{ml:2}}>{item.name}</Box></Box>
+                                ))}
+                            </Box>
 
                         </Box>
 
-
-                        <Box></Box>
                     </Box>
+
+
+
+
+
                 </Box>
             </Container>
         </Box>
@@ -97,13 +127,14 @@ const styles = {
         pt: [30, null, null, null, 60],
         pb: [30, null, null, 50, 60],
     },
+    info: {
 
+        backgroundColor: 'white',
+        p: 4,
+        width: ['100%', null, null, null, '55.3em']
+    },
     contentWrapper: {
-        gap: [null, null, null, null, '30px'],
-        display: ['flex', null, null, null, 'grid'],
-        alignItems: 'center',
-        flexDirection: ['column', null, null, null, null],
-        gridTemplateColumns: ['unset', null, null, null, 'repeat(2,1fr)'],
+
     },
     heading: {
         textAlign: ['center', 'center', 'center', 'left'],
@@ -119,6 +150,9 @@ const styles = {
             fontSize: ['15px', '15px', '15px', '17px'],
             mt: [3, 3, 3, 20, 5],
         },
+    },
+    galleryWrapper: {
+        mx: '-15px',
     },
     heading: {
         textAlign: ['center', 'center', 'center', 'left'],
