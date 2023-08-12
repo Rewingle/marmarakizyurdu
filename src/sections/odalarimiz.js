@@ -105,7 +105,7 @@ function Odalarimiz() {
                             <Box sx={{textAlign:'center'}}><h3>Oda özellikleri</h3></Box>
                             <Box sx={{display:'grid', gridTemplateColumns: ['1fr 1fr 1fr',null,null,null,'1fr 1fr 1fr 1fr'],gridGap:'2em'}}>
                                 {features.map((item) => (
-                                    <Box sx={{display:'flex'}}><Image src={item.icon} style={{width:'24px',height:'24px'}} /><Box sx={{ml:2}}>{item.name}</Box></Box>
+                                    <Box sx={{display:'flex'}}><Image src={item.icon} style={{width:'24px',height:'24px'}} alt={item.alt}/><Box sx={{ml:2}}>{item.name}</Box></Box>
                                 ))}
                             </Box>
 

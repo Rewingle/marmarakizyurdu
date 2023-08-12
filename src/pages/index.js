@@ -22,7 +22,7 @@ export default function IndexPage() {
 
 
       <Layout>
-        <SEO title="Marmara kız öğrenci yurdu" />
+        <SEO title="Marmara kız öğrenci yurdu" description="Kadıköy'ün merkezinde kız öğrenci yurdu"/>
         <Whatsapp/>
         <Banner />
         <Hakkimizda/>
