@@ -88,11 +88,7 @@ function Odalarimiz() {
                             image: gallery3,
                             title: '',
                         }} />
-                        <GalleryCard item={{
-                            id: 5,
-                            image: gallery4,
-                            title: '',
-                        }} />
+                       
 
                         <Box sx={styles.info}>
                             <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
