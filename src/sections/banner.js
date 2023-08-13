@@ -4,8 +4,8 @@ import { rgba } from 'polished';
 import { useRef, useEffect, useState } from 'react';
 //import Link from 'next/link'
 import Image from 'components/image';
-import banner1 from 'assets/images/banner1.webp';
-import banner2 from 'assets/images/banner2.webp'
+import banner1 from 'assets/images/banner1.webp'
+import banner2 from 'assets/images/gallery/render.jpg'
 import banner3 from 'assets/images/banner3.webp'
 
 //import { useNavigate } from 'react-router-dom'

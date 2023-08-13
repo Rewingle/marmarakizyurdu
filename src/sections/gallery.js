@@ -5,12 +5,12 @@ import Masonry from 'react-masonry-component';
 import SectionHeading from 'components/section-heading';
 import GalleryCard from 'components/cards/gallery-card';
 import Link from 'next/link';
-import gallery2 from 'assets/images/gallery/Render3mini.webp';
-import gallery3 from 'assets/images/gallery/Render4mini.webp';
-import gallery4 from 'assets/images/gallery/Render5mini.webp';
-import gallery5 from 'assets/images/gallery/Render6mini.webp';
-import gallery6 from 'assets/images/gallery/Render7mini.webp';
-import renderBg from 'assets/images/gallery/Render1mini.webp';
+import gallery1 from 'assets/images/gallery/oda2.webp';
+import gallery2 from 'assets/images/gallery/oda3.webp';
+import gallery3 from 'assets/images/gallery/oda1.webp';
+import gallery4 from 'assets/images/gallery/oda5.webp';
+import gallery5 from 'assets/images/gallery/oda4.webp';
+import gallery6 from 'assets/images/gallery/oda6.webp';
 
 
 const masonryOptions = {
@@ -48,7 +48,7 @@ const Gallery = () => {
           }} />
           <GalleryCard  item={{
             id: 5,
-            image: renderBg,
+            image: gallery1,
             title: '',
           }} />
           <GalleryCard  item={{

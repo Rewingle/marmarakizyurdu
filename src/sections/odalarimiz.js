@@ -2,9 +2,12 @@ import React from 'react'
 import { Box, Container, Text } from 'theme-ui';
 import SectionHeading from 'components/section-heading';
 import Image from 'components/image'
-import gallery1 from 'assets/images/gallery/Render2mini.webp';
-import gallery2 from 'assets/images/gallery/Render3mini.webp';
-import gallery3 from 'assets/images/gallery/Render4mini.webp';
+import gallery1 from 'assets/images/gallery/oda1.webp';
+import gallery2 from 'assets/images/gallery/oda2.webp';
+import gallery3 from 'assets/images/gallery/oda3.webp';
+import gallery4 from 'assets/images/gallery/oda4.webp';
+import gallery5 from 'assets/images/gallery/oda5.webp';
+import gallery6 from 'assets/images/gallery/oda6.webp';
 import library from 'assets/images/icons/book.webp'
 import light from 'assets/images/icons/idea.webp'
 import trash from 'assets/images/icons/trash.webp'
@@ -92,6 +95,24 @@ function Odalarimiz() {
                         <GalleryCard item={{
                             id: 3,
                             image: gallery3,
+                            title: 'kız yurt odası 3',
+                        }} />
+                       
+                        <GalleryCard item={{
+                            id: 4,
+                            image: gallery4,
+                            title: 'kız yurt odası 3',
+                        }} />
+                       
+                        <GalleryCard item={{
+                            id: 5,
+                            image: gallery5,
+                            title: 'kız yurt odası 3',
+                        }} />
+                       
+                        <GalleryCard item={{
+                            id: 6,
+                            image: gallery6,
                             title: 'kız yurt odası 3',
                         }} />
                        
