@@ -39,34 +39,34 @@ const Gallery = () => {
           <GalleryCard item={{
             id: 1,
             image: gallery2,
-            title: ''
+            alt: 'kız yurt odası'
           }} />
 
           <GalleryCard  item={{
             id: 2,
             image: gallery3,
-            title: '',
+            alt: 'kız yurt odası',
           }} />
           <GalleryCard  item={{
             id: 4,
             image: gallery12,
-            title: '',
+            alt: 'kız yurt odası',
           }} />
           <GalleryCard  item={{
             id: 3,
             image: gallery1,
-            title: '',
+            alt: 'kız yurt odası',
           }} />
           <GalleryCard  item={{
             id: 5,
             image: gallery5,
-            title: '',
+            alt: 'kız yurt odası',
           }} />
          
           <GalleryCard  item={{
             id: 6,
             image: gallery7,
-            title: '',
+            alt: 'kız yurt odası',
           }} />
         
         
