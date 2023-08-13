@@ -9,7 +9,7 @@ class CustomDocument extends Document {
   render() {
     return (
       <Html lang="tr-TR">
-        <Head><link rel="shortcut icon" href="/static/favicon.ico" /></Head>
+        <Head><link rel="icon" href="/static/favicon.ico" ></link></Head>
         <body>
           <Main />
           <NextScript />
