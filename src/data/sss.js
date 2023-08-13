@@ -9,7 +9,7 @@ export default [
     },
     {
         question: 'Yurt giriş çıkışlarda saat sınırlaması var mı?',
-        answer: 'Hafta içi günlerde 06.00-24.00 saatleri arasında, hafta sonu 06.00-02.00 saatleri arasında giriş ve çıkışlara  açıktır.'
+        answer: 'Hafta içi günlerde 06.00-24.00 saatleri arasında, hafta sonu 06.00-01.00 saatleri arasında giriş ve çıkışlara  açıktır.'
     },
     {
         question: 'Yurtta kablosuz internet bağlantısı (Wireless) var mı?',

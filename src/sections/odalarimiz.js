@@ -5,9 +5,9 @@ import Image from 'components/image'
 import gallery1 from 'assets/images/gallery/oda1.webp';
 import gallery2 from 'assets/images/gallery/oda2.webp';
 import gallery3 from 'assets/images/gallery/oda3.webp';
-import gallery4 from 'assets/images/gallery/oda4.webp';
-import gallery5 from 'assets/images/gallery/oda5.webp';
-import gallery6 from 'assets/images/gallery/oda6.webp';
+import gallery4 from 'assets/images/gallery/oda7.webp';
+import gallery5 from 'assets/images/gallery/oda8.webp';
+import gallery6 from 'assets/images/gallery/oda9.webp';
 import library from 'assets/images/icons/book.webp'
 import light from 'assets/images/icons/idea.webp'
 import trash from 'assets/images/icons/trash.webp'
@@ -84,36 +84,36 @@ function Odalarimiz() {
                         <GalleryCard item={{
                             id: 1,
                             image: gallery1,
-                            title: 'kız yurt odası 1'
+                            alt: 'kız yurt odası 1'
                         }} />
 
                         <GalleryCard item={{
                             id: 2,
                             image: gallery2,
-                            title: 'kız yurt odası 2',
+                            alt: 'kız yurt odası 2',
                         }} />
                         <GalleryCard item={{
                             id: 3,
                             image: gallery3,
-                            title: 'kız yurt odası 3',
+                            alt: 'kız yurt odası 3',
                         }} />
                        
                         <GalleryCard item={{
                             id: 4,
                             image: gallery4,
-                            title: 'kız yurt odası 3',
+                            alt: 'kız yurt odası 3',
                         }} />
                        
                         <GalleryCard item={{
                             id: 5,
                             image: gallery5,
-                            title: 'kız yurt odası 3',
+                            alt: 'kız yurt odası 3',
                         }} />
                        
                         <GalleryCard item={{
                             id: 6,
                             image: gallery6,
-                            title: 'kız yurt odası 3',
+                            alt: 'kız yurt odası 3',
                         }} />
                        
 

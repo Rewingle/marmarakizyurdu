@@ -11,6 +11,12 @@ import gallery3 from 'assets/images/gallery/oda1.webp';
 import gallery4 from 'assets/images/gallery/oda5.webp';
 import gallery5 from 'assets/images/gallery/oda4.webp';
 import gallery6 from 'assets/images/gallery/oda6.webp';
+import gallery7 from 'assets/images/gallery/oda7.webp';
+import gallery8 from 'assets/images/gallery/oda8.webp';
+import gallery9 from 'assets/images/gallery/oda9.webp';
+import gallery10 from 'assets/images/gallery/oda10.webp';
+import gallery11 from 'assets/images/gallery/oda11.webp';
+import gallery12 from 'assets/images/gallery/oda12.webp';
 
 
 const masonryOptions = {
@@ -31,41 +37,43 @@ const Gallery = () => {
         
           
           <GalleryCard item={{
-            id: 2,
+            id: 1,
             image: gallery2,
             title: ''
           }} />
 
           <GalleryCard  item={{
-            id: 3,
+            id: 2,
             image: gallery3,
             title: '',
           }} />
           <GalleryCard  item={{
             id: 4,
-            image: gallery4,
+            image: gallery12,
             title: '',
           }} />
           <GalleryCard  item={{
-            id: 5,
+            id: 3,
             image: gallery1,
             title: '',
           }} />
           <GalleryCard  item={{
-            id: 6,
+            id: 5,
             image: gallery5,
             title: '',
           }} />
          
           <GalleryCard  item={{
-            id: 7,
-            image: gallery6,
+            id: 6,
+            image: gallery7,
             title: '',
           }} />
+        
+        
          
 
         </Box>
-        <Link href="/odalar"><a>
+        <Link href="/galeri"><a>
           <Button variant="muted" sx={styles.button}>
             Daha fazlası <RiArrowRightSLine size="20px" />
           </Button></a></Link>

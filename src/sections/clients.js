@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Box, Button, Container, Image } from 'theme-ui';
+import { jsx, Box, Button, Container, Image, Heading } from 'theme-ui';
 import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 import Slider from 'react-slick';
 import SectionHeading from 'components/section-heading';
@@ -64,9 +64,9 @@ function SlickArrow({ className, onClick, control }) {
       onClick={onClick}
     >
       {control === 'prev' ? (
-        <BsArrowLeft size="32px" style={{ marginRight: '4em',width:'32px' }} />
+        <BsArrowLeft size="32px" style={{ marginRight: '4em', width: '32px' }} />
       ) : (
-        <BsArrowRight size="32px" style={{ marginLeft: '4em',width:'32px' }} />
+        <BsArrowRight size="32px" style={{ marginLeft: '4em', width: '32px' }} />
       )}
     </Button>
   );
@@ -118,15 +118,19 @@ const Clients = () => {
           slogan="Üniversiteler"
           title="Anlaşmalı olduğumuz üniversiteler"
         />
-        <hr/>
+        <hr />
         <Box as="figure" sx={styles.logo}>
           <Image loading="lazy" src={acibadem} alt='Acıbadem ünivesitesi' />
         </Box>
-        <hr/>
-        <SectionHeading
-
-          title="Yakındaki üniversiteler"
-        />
+        <hr />
+        <br/>
+        <Heading style={{
+          textAlign: 'center', fontSize: [21, , , 30],
+          fontWeight: [500, 400],
+          lineHeight: 1.68,
+          letterSpacing: 'heading',
+        }}>Yakındaki Üniversiteler</Heading>
+        <br/>
         <Slider sx={styles.clients} {...settings}>
           {clients?.map((client) => (
             <Box key={client.id} as="figure" sx={styles.logo}>

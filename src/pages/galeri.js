@@ -6,15 +6,20 @@ import { Box, Container } from 'theme-ui';
 import SectionHeading from 'components/section-heading';
 import GalleryCard from 'components/cards/gallery-card';
 import Masonry from 'react-masonry-component';
-import gallery1 from 'assets/images/gallery/Render1mini.webp';
-import gallery2 from 'assets/images/gallery/Render2mini.webp';
-import gallery3 from 'assets/images/gallery/Render3mini.webp';
-import gallery4 from 'assets/images/gallery/Render4mini.webp';
-import gallery5 from 'assets/images/gallery/Render5mini.webp';
-import gallery6 from 'assets/images/gallery/Render6mini.webp';
-import gallery7 from 'assets/images/gallery/Render7mini.webp';
+import gallery1 from 'assets/images/gallery/oda2.webp';
+import gallery2 from 'assets/images/gallery/oda3.webp';
+import gallery3 from 'assets/images/gallery/oda1.webp';
+import gallery4 from 'assets/images/gallery/oda5.webp';
+import gallery5 from 'assets/images/gallery/oda4.webp';
+import gallery6 from 'assets/images/gallery/oda6.webp';
+import gallery7 from 'assets/images/gallery/oda7.webp';
+import gallery8 from 'assets/images/gallery/oda8.webp';
+import gallery9 from 'assets/images/gallery/oda9.webp';
+import gallery10 from 'assets/images/gallery/oda10.webp';
+import gallery11 from 'assets/images/gallery/oda11.webp';
+import gallery12 from 'assets/images/gallery/oda12.webp';
 
-function odalar() {
+function galeri() {
   const data = [
     {
       id: 1,
@@ -51,6 +56,32 @@ function odalar() {
       image: gallery7,
       title: 'Oda-7',
     },
+    {
+      id: 5,
+      image: gallery8,
+      title: 'Oda-8',
+    },
+    {
+      id: 5,
+      image: gallery9,
+      title: 'Oda-9',
+    },
+    {
+      id: 5,
+      image: gallery10,
+      title: 'Oda-10',
+    },
+    {
+      id: 5,
+      image: gallery11,
+      title: 'Oda-11',
+    },
+    {
+      id: 5,
+      image: gallery12,
+      title: 'Oda-12',
+    },
+    
   ];
   
   const masonryOptions = {
@@ -64,7 +95,7 @@ function odalar() {
             <Container sx={styles.container}>
               <SectionHeading
                 sx={styles.heading}
-                title="Bina"
+                title="Odalar"
               />
             
               <Box as={Masonry} options={masonryOptions} sx={styles.galleryWrapper}>
@@ -72,10 +103,7 @@ function odalar() {
                   <GalleryCard key={item.id} item={item} />
                 ))}
               </Box>
-              <SectionHeading
-                sx={styles.heading}
-                title="Resepsiyon"
-              />
+              
             </Container>
           </Box>
          
@@ -117,4 +145,4 @@ const styles = {
   },
 };
 
-export default odalar
+export default galeri

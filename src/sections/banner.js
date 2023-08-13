@@ -7,6 +7,8 @@ import Image from 'components/image';
 import banner1 from 'assets/images/banner1.webp'
 import banner2 from 'assets/images/gallery/render.jpg'
 import banner3 from 'assets/images/banner3.webp'
+import banner4 from 'assets/images/gallery/render7.webp'
+import banner5 from 'assets/images/gallery/render8.webp'
 
 //import { useNavigate } from 'react-router-dom'
 import SwiperCore, { Autoplay, Pagination, EffectFade } from 'swiper';
@@ -66,6 +68,18 @@ export default function Banner() {
     {
       id: 4,
       image: banner3,
+      title: '',
+      alt: 'kız öğrenci yurdu',
+    },
+    {
+      id: 5,
+      image: banner4,
+      title: '',
+      alt: 'kız öğrenci yurdu',
+    },
+    {
+      id: 6,
+      image: banner5,
       title: '',
       alt: 'kız öğrenci yurdu',
     },

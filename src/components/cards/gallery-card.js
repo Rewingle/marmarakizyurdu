@@ -4,7 +4,7 @@ import { jsx, Box, Flex, Image } from 'theme-ui';
 const GalleryCard = ({ item }) => {
   return (
     <Flex as="figure" sx={styles.figure}>
-      <Image loading="lazy" src={item?.image} alt={item?.title} />
+      <Image loading="lazy" src={item?.image} alt={item?.alt} />
       <Box as="figcaption">{item?.title}</Box>
     </Flex>
   );
