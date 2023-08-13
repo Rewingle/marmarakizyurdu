@@ -1,19 +1,30 @@
-import React from 'react';
+import React,{lazy} from 'react';
 import { ThemeProvider } from 'theme-ui';
 import theme from 'theme';
 import SEO from 'components/seo';
 import Layout from 'components/layout';
-import Banner from 'sections/banner';
+/* import Banner from 'sections/banner';
 import Clients from 'sections/clients';
-import FeaturedSpace from 'sections/featured-space';
 import Gallery from 'sections/gallery';
 import Pricing from 'sections/pricing';
 import Blog from 'sections/blog';
 import Subscription from 'sections/subscription';
 import Hakkimizda from 'sections/hakkimizda';
 import Odalarimiz from 'sections/odalarimiz';
-import Hizmetler from 'sections/hizmetlerimiz';
+import Hizmetler from 'sections/hizmetlerimiz'; */
 import Whatsapp from 'components/whatsapp';
+
+/* const Banner from 'sections/banner';
+const Clients from 'sections/clients';
+const Gallery from 'sections/gallery';
+const Pricing from 'sections/pricing';
+const Blog from 'sections/blog'; */
+import Subscription from 'sections/subscription';
+import Hakkimizda from 'sections/hakkimizda';
+import Odalarimiz from 'sections/odalarimiz';
+import Hizmetler from 'sections/hizmetlerimiz';
+
+
 
 export default function IndexPage() {
   return (
@@ -29,7 +40,6 @@ export default function IndexPage() {
         <Odalarimiz/>
         <Hizmetler/>
         <Clients />
-        
         <Gallery />
         <Blog />
         <Pricing />
