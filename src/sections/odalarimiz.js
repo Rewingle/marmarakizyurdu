@@ -24,12 +24,7 @@ function Odalarimiz() {
         transitionDuration: 0,
     };
     const features = [
-        {
-            id: 1,
-            icon: library,
-            name: 'Kütüphane',
-            alt: 'kütüphane'
-        },
+        
         {
             id: 2,
             icon: light,
@@ -67,6 +62,37 @@ function Odalarimiz() {
             alt: 'kartlı giriş sistemi'
         },
     ]
+    const odalar = [{
+        id: 1,
+        image: gallery1,
+        alt: 'kız yurt odası',
+        full: null
+    },{
+        id: 2,
+        image: gallery2,
+        alt: 'kız yurt odası',
+        full: null
+    },{
+        id:3,
+        image: gallery3,
+        alt: 'kız yurt odası',
+        full: null
+    },{
+        id:4,
+        image: gallery4,
+        alt: 'kız yurt odası',
+        full: null
+    },{
+        id:5,
+        image: gallery5,
+        alt: 'kız yurt odası',
+        full: null
+    },{
+        id:6,
+        image: gallery6,
+        alt: 'kız yurt odası',
+        full: gallery6
+    },]
 
     return (
         <Box id="odalarimiz" as="section" sx={styles.section}>
@@ -80,42 +106,14 @@ function Odalarimiz() {
                 <Box sx={styles.contentWrapper}>
                     <Box as={Masonry} options={masonryOptions} sx={styles.galleryWrapper}>
 
-
-                        <GalleryCard item={{
-                            id: 1,
-                            image: gallery1,
-                            alt: 'kız yurt odası 1'
-                        }} />
-
-                        <GalleryCard item={{
-                            id: 2,
-                            image: gallery2,
-                            alt: 'kız yurt odası 2',
-                        }} />
-                        <GalleryCard item={{
-                            id: 3,
-                            image: gallery3,
-                            alt: 'kız yurt odası 3',
-                        }} />
-                       
-                        <GalleryCard item={{
-                            id: 4,
-                            image: gallery4,
-                            alt: 'kız yurt odası 3',
-                        }} />
-                       
-                        <GalleryCard item={{
-                            id: 5,
-                            image: gallery5,
-                            alt: 'kız yurt odası 3',
-                        }} />
-                       
-                        <GalleryCard item={{
-                            id: 6,
-                            image: gallery6,
-                            alt: 'kız yurt odası 3',
-                        }} />
-                       
+                        {odalar.map((oda)=>(
+                            <GalleryCard onClick={()=>{alert('buttonpop')}} item={{
+                                id: oda.id,
+                                image: oda.image,
+                                alt: oda.alt,
+                                full: oda.full
+                            }} />
+                        ))}
 
                         <Box sx={styles.info}>
                             <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>

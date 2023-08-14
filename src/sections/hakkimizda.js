@@ -7,24 +7,20 @@ function Hakkimizda() {
     <Box id="hakkimizda" as="section" sx={styles.section}>
       <Container>
         <Flex sx={styles.contentWrapper}>
-          
+
           <Box sx={styles.rightContent}>
-            <SectionHeading
-              sx={styles.heading}
-              title="Hakkımızda"
-              description="2023 yılında açılan yurdumuz, üniversitelere ve toplu ulaşım noktalarına yakınlığıyla siz üniversiteliler için en doğru seçim olacaktır.
-            Öğrencilerimizin sosyal çevre açısından da beklentilerini güvenli bir şekilde karşılamaktadır."
-            />
             <Text as='p' sx={{ fontSize: 16, lineHeight: 2.07, textAlign: ['center', 'center', 'center', 'center'], maxWidth: 580 }}>
               Marmara Kız Öğrenci Yurdu olarak amacımız, Atatürk ilke ve inkilaplarından hiçbir zaman ödün vermeyen, laikliği daima koruyan;
               seçkin yönetim kadrosu ile tüm öğrencilerimizin öncelikle güven, saygu ve aile sıcaklığını hissetmelerini amaçlamaktayız.
             </Text>
+            <Text as='p' sx={{ fontSize: 16, lineHeight: 2.07, textAlign: ['center', 'center', 'center', 'center'], maxWidth: 580 }}>2023 yılında açılan yurdumuz, üniversitelere ve toplu ulaşım noktalarına yakınlığıyla siz üniversiteliler için en doğru seçim olacaktır.
+              Öğrencilerimizin sosyal çevre açısından da beklentilerini güvenli bir şekilde karşılamaktadır.</Text>
             <Text as='p' sx={{ fontSize: 16, lineHeight: 2.07, textAlign: ['center', 'center', 'center', 'center'], maxWidth: 580 }}>
               Özel Marmara Kız Öğrenci Yurdumuz, Gençlik ve Spor Bakanlığı'na bağlı olarak hizmet vermektedir.
             </Text>
 
           </Box>
-          
+
         </Flex>
       </Container>
     </Box>

@@ -1,12 +1,29 @@
 /** @jsx jsx */
-import { jsx, Box, Flex, Image } from 'theme-ui';
-
+import { jsx, Box, Flex } from 'theme-ui';
+import Popup from 'components/popup';
+import Image from 'components/image.js'
+import {useState} from 'react'
 const GalleryCard = ({ item }) => {
+  const [buttonPopup, setButtonPopup] = useState(false)
+
   return (
-    <Flex as="figure" sx={styles.figure}>
-      <Image loading="lazy" src={item?.image} alt={item?.alt} />
-      <Box as="figcaption">{item?.title}</Box>
-    </Flex>
+    <>
+      <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
+        <Box>
+          <Box className={`next-image-wrapper`} sx={{ position: 'relative', height: '32em',display:'flex',alignItems:'center',justifyContent:'center' }}>
+
+            <Image src={item?.full} fill style={{ objectFit: 'contain' }} />
+
+          </Box>
+        </Box>
+
+
+      </Popup>
+      <Flex as="figure" sx={styles.figure} onClick={() => { setButtonPopup(true) }}>
+        <Image loading="lazy" src={item?.image} alt={item?.alt} />
+        <Box as="figcaption">{item?.title}</Box>
+      </Flex>
+    </>
   );
 };
 
@@ -20,6 +37,9 @@ const styles = {
     alignItems: 'flex-start',
     mb: 30,
     mx: 15,
+    ':hover':{
+      cursor:'pointer'
+    },
     width: [
       'calc(100% - 30px)',
       'calc(100% - 30px)',
@@ -48,6 +68,7 @@ const styles = {
       img: {
         transform: 'scale(1.2)',
       },
+      cursor:'pointer'
     },
     figcaption: {
       color: '#fff',
