@@ -23,11 +23,7 @@ export default function Banner() {
   const [currentWidth, setCurrentWidth] = useState(0);
   let time = 3;
   let tick, percentTime;
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('submitting...');
-  };
+  
   const swiperRef = useRef(null);
   function startProgressbar() {
     resetProgressbar();
@@ -85,7 +81,7 @@ export default function Banner() {
     },
 
   ]
-  //const navigate = useNavigate();
+  //1691x952
   return (
     <Box id="home" as="section" sx={styles.section}>
       <Box>
@@ -101,8 +97,8 @@ export default function Banner() {
         >
           {slideGallery?.map((item) => (
             <SwiperSlide key={item.id}>
-              <Box as="figure" sx={styles.image}>
-                <Image loading="lazy" src={item.image} alt={item.alt} sx={{ height: [null, null, null, null, '620px'], boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 10px', width: ['100%', '90%', '90%', '80%', '80%'], marginTop: ['4em', '4em', '4em', '10em', '10em'] }} />
+              <Box as="figure" sx={styles.image}> 
+                <Image loading="lazy" src={item.image} alt={item.alt} sx={{ height: [null, null, null, null, '100%'], boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 10px', width: ['100%', '90%', '90%', '100%', '100%'], marginTop: ['4em', '4em', '4em', '10em', '10em'] }} />
 
               </Box>
             </SwiperSlide>
@@ -160,7 +156,7 @@ const styles = {
   },
   image: {
     position: 'relative',
-    height: [null, null, null, null, '620px'],
+    height: [null, null, null, null, '100vh'],
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center'
