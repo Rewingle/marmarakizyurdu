@@ -5,10 +5,10 @@ import { useRef, useEffect, useState } from 'react';
 //import Link from 'next/link'
 import Image from 'components/image';
 import banner1 from 'assets/images/banner1.webp'
-import banner2 from 'assets/images/gallery/render.webp'
-import banner3 from 'assets/images/banner3.webp'
-import banner4 from 'assets/images/gallery/render7.webp'
-import banner5 from 'assets/images/gallery/render8.webp'
+import banner2 from 'assets/images/render10.webp'
+import banner3 from 'assets/images/banner2.webp'
+import banner4 from 'assets/images/render2.webp'
+import banner5 from 'assets/images/render3.webp'
 
 //import { useNavigate } from 'react-router-dom'
 import SwiperCore, { Autoplay, Pagination, EffectFade } from 'swiper';
