@@ -29,8 +29,7 @@ const styles = {
         left: 0,
         width: '100%',
         height: '100vh',
-        backgroundColor: 'rgba(0,0,0,0.2)',
-        
+        backgroundColor: 'rgba(0,0,0,0.6)',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center'
@@ -39,7 +38,7 @@ const styles = {
         position: 'relative',
         padding: '2em',
         width: '100%',
-        maxWidth: '640px',
+        maxWidth: '1080px',
         zIndex:100,
         backgroundColor: 'white',
         borderRadius: '1em'

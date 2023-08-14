@@ -8,7 +8,7 @@ import gallery3 from 'assets/images/gallery/oda3.webp';
 import gallery4 from 'assets/images/gallery/oda7.webp';
 import gallery5 from 'assets/images/gallery/oda8.webp';
 import gallery6 from 'assets/images/gallery/oda9.webp';
-import library from 'assets/images/icons/book.webp'
+import full1 from 'assets/images/gallery/full/1.webp'
 import light from 'assets/images/icons/idea.webp'
 import trash from 'assets/images/icons/trash.webp'
 import towel from 'assets/images/icons/towel.webp'
@@ -66,7 +66,7 @@ function Odalarimiz() {
         id: 1,
         image: gallery1,
         alt: 'kız yurt odası',
-        full: null
+        full: full1
     },{
         id: 2,
         image: gallery2,

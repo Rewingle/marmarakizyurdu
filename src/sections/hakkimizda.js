@@ -6,16 +6,19 @@ function Hakkimizda() {
   return (
     <Box id="hakkimizda" as="section" sx={styles.section}>
       <Container>
+          <SectionHeading sx={{display:'block',textAlign:'center'}}
+            title='Hakkımızda'
+          />
+          <br/>
         <Flex sx={styles.contentWrapper}>
-
           <Box sx={styles.rightContent}>
-            <Text as='p' sx={{ fontSize: 16, lineHeight: 2.07, textAlign: ['center', 'center', 'center', 'center'], maxWidth: 580 }}>
+            <Text as='p' sx={{ fontSize: 16, lineHeight: 2.07, textAlign: ['center', 'center', 'center', 'center'], maxWidth: 660 }}>
               Marmara Kız Öğrenci Yurdu olarak amacımız, Atatürk ilke ve inkilaplarından hiçbir zaman ödün vermeyen, laikliği daima koruyan;
               seçkin yönetim kadrosu ile tüm öğrencilerimizin öncelikle güven, saygu ve aile sıcaklığını hissetmelerini amaçlamaktayız.
             </Text>
-            <Text as='p' sx={{ fontSize: 16, lineHeight: 2.07, textAlign: ['center', 'center', 'center', 'center'], maxWidth: 580 }}>2023 yılında açılan yurdumuz, üniversitelere ve toplu ulaşım noktalarına yakınlığıyla siz üniversiteliler için en doğru seçim olacaktır.
+            <Text as='p' sx={{ fontSize: 16, lineHeight: 2.07, textAlign: ['center', 'center', 'center', 'center'], maxWidth: 660 }}>2023 yılında açılan yurdumuz, üniversitelere ve toplu ulaşım noktalarına yakınlığıyla siz üniversiteliler için en doğru seçim olacaktır.
               Öğrencilerimizin sosyal çevre açısından da beklentilerini güvenli bir şekilde karşılamaktadır.</Text>
-            <Text as='p' sx={{ fontSize: 16, lineHeight: 2.07, textAlign: ['center', 'center', 'center', 'center'], maxWidth: 580 }}>
+            <Text as='p' sx={{ fontSize: 16, lineHeight: 2.07, textAlign: ['center', 'center', 'center', 'center','center'], maxWidth: 660 }}>
               Özel Marmara Kız Öğrenci Yurdumuz, Gençlik ve Spor Bakanlığı'na bağlı olarak hizmet vermektedir.
             </Text>
 
@@ -45,7 +48,7 @@ const styles = {
     m: ['50px 0 0', '50px 0 0', '50px 0 0', 0, '0 20px 0 0', '0 48px 0 0'],
   },
   rightContent: {
-    m: [0, 0, 0, 0, '0px 48px 0px 0px', '0px 95px 0px 0px'],
+
   },
   heading: {
     textAlign: ['center', 'center', 'center', 'left'],
