@@ -28,7 +28,7 @@ export function NavLink({ path, label, children, ...rest }) {
 export function Link({ path, label, children, ...rest }) {
   return (
     <NextLink href={path}>
-      <A {...rest}>{children ? children : label}</A>
+      <A href={'/'} {...rest}>{children ? children : label}</A>
     </NextLink>
   );
 }
