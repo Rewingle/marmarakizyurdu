@@ -10,6 +10,7 @@
     "postbuild": "next-sitemap"
   },
   "dependencies": {
+    "@next/bundle-analyzer": "^13.4.16",
     "@next/env": "^13.4.9",
     "@vercel/analytics": "^1.0.1",
     "cross-env": "^7.0.3",
