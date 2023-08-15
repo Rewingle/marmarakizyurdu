@@ -27,7 +27,7 @@ function Basvurular() {
             line1: 'BASVURU'
         }
     ]
-    const [selectedTab, setSelectedTab] = useState(tabs[0])
+    const [selectedTab, setSelectedTab] = useState(0)
 
     const TabSwitcher = ({ tab }) => {
         switch (tab) {
@@ -140,12 +140,30 @@ function Basvurular() {
                 )
             case 3:
                 return (
-                    <Box sx={{display:'flex'}}>
-                        <Box>ÖZEL MARMARA KIZ ÖĞRENCİ YURDU BAŞVURUSU İÇİN<a href='/' style={{marginLeft:'8px'}}>tıklayınız</a></Box>
+                    <Box sx={{ display: 'flex' }}>
+                        <Box>ÖZEL MARMARA KIZ ÖĞRENCİ YURDU BAŞVURUSU İÇİN<a href='/' style={{ marginLeft: '8px' }}>tıklayınız</a></Box>
                     </Box>
                 )
             default:
-                return <Box>Koşul ve Belge</Box>
+                return <Box>
+                    <h4>Öğrenci Yurduna Yeni Başvuran Öğrencilerden İstenen Belgeler:</h4>
+                    <ul>
+                        <li>Başvuru formu için tıklayınız.</li>
+                        <li>Aşağıdaki belgelerin programa yüklenmesi ve programda bulunan belgelerin imzalanması,</li>
+                        <li>Öğrenci Yurdu konaklama bedeli dekontu ve depozito dekontu, ( Dekontların açıklama kısmına başvuru yapan öğrencilerin isimleri ve
+                            T.C numaraları yazılmalıdır.)</li>
+                        <li>Nüfus cüzdanı,</li>
+                        <li>Öğrenci belgesi,</li>
+                        <li>Adli sicil ve Arşiv kaydı belgesi,</li>
+                        <li>Yabancı uyruklu öğrenciler; öğrenci belgesi, pasaport, kuruma kayıt tarihinden itibaren üç ay içinde ilgili kurum ve kuruluşlardan alınmış
+                            ikamet izin belgesini ibraz etmek zorundadırlar.</li>
+                        <li>İkametgâh belgesi,</li>
+                        <li>4 adet vesikalık fotoğraf, (Son 6 ay içinde çekilmiş fotoğraf olmalıdır. Biyometrik fotoğraf kabul edilmemektedir. Resimler elden teslim
+                            edilecektir. Elden teslim edilen fotoğrafın aynısı sisteme eklenmek zorundadır.)</li>
+                        <li>Toplu yerlerde yaşamaya engel olacak seviyede akıl ve ruh hastalığı veya bulaşıcı hastalığı olmadığına daire yazılı beyanda bulunmak,</li>
+
+                    </ul>
+                </Box>
         }
     }
 
