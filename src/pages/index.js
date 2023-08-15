@@ -13,7 +13,7 @@ import Hakkimizda from 'sections/hakkimizda';
 import Odalarimiz from 'sections/odalarimiz';
 import Hizmetler from 'sections/hizmetlerimiz'; 
 import Whatsapp from 'components/whatsapp';
-
+import Basvurular from 'sections/basvurular';
 /* const Banner from 'sections/banner';
 const Clients from 'sections/clients';
 const Gallery from 'sections/gallery';
@@ -39,6 +39,7 @@ export default function IndexPage() {
         <Hakkimizda/>
         <Odalarimiz/>
         <Hizmetler/>
+        <Basvurular/>
         <Clients />
         <Gallery />
         <Blog />

@@ -13,7 +13,11 @@ export default [
   },
   {
     path: 'hizmetler',
-    label: 'Hizmetler',
+    label: 'Hizmetlerimiz',
+  },
+  {
+    path: 'basvurular',
+    label: 'Basvurular'
   },
   {
     path: 'gallery',
