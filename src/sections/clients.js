@@ -10,7 +10,6 @@ import maltepe from 'assets/images/clients/maltepe.png';
 import uskudar from 'assets/images/clients/uskudar.png';
 import marmara from 'assets/images/clients/marmara.png';
 import may29 from 'assets/images/clients/29may.png';
-//import dogus from 'assets/images/clients/dogus.png';
 import acibadem from 'assets/images/clients/acibadem.png';
 const clients = [
   {
@@ -171,12 +170,7 @@ const styles = {
       outline: 'none',
     },
   },
-  pagination: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginTop: 5,
-  },
+ 
   paginationButton: {
     minHeight: '30px',
     padding: 0,
@@ -185,9 +179,7 @@ const styles = {
     ':focus': {
       outline: '0 none',
     },
-    svg: {
-      transition: 'all 0.2s ease-in-out 0s',
-    },
+    
     '&.slick-disabled': {
       color: '#BBC7D7',
       svg: {

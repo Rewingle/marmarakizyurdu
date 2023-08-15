@@ -9,7 +9,7 @@ class CustomDocument extends Document {
   render() {
     return (
       <Html lang="tr-TR">
-        <Head><link rel="icon" href="/static/favicon.ico" ></link><meta name='Marmara kız öğrenci yurdu' content='Kadıköy kız öğrenci yurdu'></meta></Head>
+        <Head><link rel="icon" href="/static/marmarakizogrenciyurdu.ico" ></link><meta name='Marmara kız öğrenci yurdu' content='Kadıköy kız öğrenci yurdu'></meta></Head>
         <body>
           <Main />
           <NextScript />
