@@ -29,7 +29,6 @@ const Gallery = () => {
       <Container sx={styles.container}>
         <SectionHeading
           sx={styles.heading}
-          slogan=""
           title=" Galeri"
         />
 

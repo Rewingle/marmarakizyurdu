@@ -2,8 +2,6 @@
 import { jsx, Box, Container, Button } from 'theme-ui';
 import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 import SectionHeading from 'components/section-heading';
-import PriceCard from 'components/cards/price-card';
-import Masonry from 'react-masonry-component';
 import sss from '../data/sss'
 import {HiStar} from 'react-icons/hi'
 import {HiPlus} from 'react-icons/hi'
@@ -71,8 +69,8 @@ const Blog = () => {
 
 
         <Box sx={{ width: '0.1em', height: '0.1em', backgroundColor: 'pink', opacity: 0, display: ['none', 'none', 'block', 'block', 'block'] }}></Box>
-        {sss?.map((item, { index }) => (
-          <Box sx={{}}>
+        {sss?.map((item,index) => (
+          <Box key={index}>
             <Box sx={{display:'flex',fontSize:'18px',p:2,alignItems:'center',fontWeight:'600',borderRadius:'1em',backgroundColor:'lightgray'}}><HiStar/><Box sx={{ml:1}}>{item.question}</Box><Box sx={{marginLeft:'auto',display:'none'}}><HiPlus size={'1.6em'} color='#8D448B'/></Box></Box>
             <Box sx={{p:1}}>{item.answer}</Box>
           </Box>

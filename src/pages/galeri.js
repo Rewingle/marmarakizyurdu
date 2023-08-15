@@ -62,49 +62,49 @@ function galeri() {
         full: full4
       },
       {
-        id: 6,
+        id: 5,
         image: gallery5,
         title: 'Oda-5',
         full: full5
       },
       {
-        id: 5,
+        id: 6,
         image: gallery6,
         title: 'Oda-6',
         full: full6
       },
       {
-        id: 5,
+        id: 7,
         image: gallery7,
         title: 'Oda-7',
         full: full7
       },
       {
-        id: 5,
+        id: 8,
         image: gallery8,
         title: 'Oda-8',
         full: full8
       },
       {
-        id: 5,
+        id: 9,
         image: gallery9,
         title: 'Oda-9',
         full: full9
       },
       {
-        id: 5,
+        id: 10,
         image: gallery10,
         title: 'Oda-10',
         full: full10
       },
       {
-        id: 5,
+        id: 11,
         image: gallery11,
         title: 'Oda-11',
         full: full11
       },
       {
-        id: 5,
+        id: 12,
         image: gallery12,
         title: 'Oda-12',
         full: full12
@@ -114,17 +114,17 @@ function galeri() {
       {
         id: 1,
         image: plan1,
-        title: '1.2.3. Kat planlı',
+        title: '1.2.3. Kat Planı',
         full: plan1
       },{
         id: 2,
         image: plan2,
-        title: '4. Kat planı',
+        title: '4. Kat Planı',
         full: plan2
       },{
         id: 3,
         image: plan3,
-        title: 'Çatı arası piyesi kat planı',
+        title: 'Çatı Arası Piyesi Kat Planı',
         full: plan3
       },
     ]

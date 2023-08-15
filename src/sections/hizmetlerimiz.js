@@ -77,8 +77,8 @@ function Hizmetler() {
                     title="Hizmetlerimiz"
 
                 />
-                {hizmetler.map((item) => (
-                    <Box sx={styles.itemCard}>
+                {hizmetler.map((item,i) => (
+                    <Box key={i} sx={styles.itemCard}>
 
                         <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
 

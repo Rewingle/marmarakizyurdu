@@ -2,14 +2,14 @@ import React from 'react';
 import Head from 'next/head';
 
 export default function SEO({
-  description = 'Kadıköy kız öğrenci yurdu',
-  author = 'Mehmet Ali Kul',
+  description,
+  author,
   meta,
-  title = 'Marmara kız öğrenci yurdu',
+  title,
 }) {
   const metaData = [
     {
-      name: `Kadıköyde kız öğrenci yurdu`,
+      name: `description`,
       content: description,
     },
     {
@@ -26,11 +26,11 @@ export default function SEO({
     },
     {
       name: `twitter:card`,
-      content: `summary`,
+      content: `Kadıköy'ün merkezinde kız öğrenci yurdu`,
     },
     {
       name: `twitter:creator`,
-      content: author,
+      content: 'Mehmet Ali Kul',
     },
     {
       name: `twitter:title`,
@@ -41,6 +41,7 @@ export default function SEO({
       content: description,
     },
   ].concat(meta);
+  console.log(metaData)
   return (
     <Head>
       <title>{title}</title>
