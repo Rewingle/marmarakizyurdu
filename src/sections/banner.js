@@ -98,7 +98,7 @@ export default function Banner() {
           {slideGallery?.map((item) => (
             <SwiperSlide key={item.id}>
               <Box as="figure" sx={styles.image}> 
-                <Image loading="lazy" src={item.image} alt={item.alt} sx={{ height: [null, null, null, null, '100%'], boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 10px', width: ['100%', '90%', '90%', '100%', '100%'], marginTop: ['4em', '4em', '4em', '10em', '10em'] }} />
+                <Image loading="lazy" src={item.image} alt={item.alt} sx={{ height: [null, null, null, null, '100%'], boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 10px', width: '100%', marginTop: ['3em', '3em', '6em', '8em', '8em'] }} />
 
               </Box>
             </SwiperSlide>
@@ -145,32 +145,15 @@ const styles = {
       padding: '30px 50px 25px',
     },
   },
-  heroTitle: {
-    fontSize: [22, 28, 28, 40, , 5, 6],
-    fontWeight: 700,
-    letterSpacing: 'heading',
-    lineHeight: [1.4, null, null, null, null, null, 1.57],
-    '@media only screen and (min-height: 720px) and (max-height: 760px), (min-width: 1501px) and (max-width: 1560px) ': {
-      fontSize: 40,
-    },
-  },
+ 
   image: {
     position: 'relative',
     height: [null, null, null, null, '100vh'],
+    width: ['100%',null,null,null,null],
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center'
 
-
-  },
-  desc: {
-    fontSize: [15, 16, 15, 17],
-    lineHeight: [1.53, 1.53, 1.53, 2, 2.4, 2, 2.48],
-    maxWidth: 440,
-    marginTop: [15, 15, 15, null, null, null, 30],
-    '@media only screen and (min-height: 720px) and (max-height: 760px), (min-width: 1501px) and (max-width: 1560px) ': {
-      mt: 15,
-    },
   },
   select: {
     marginTop: 30,

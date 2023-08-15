@@ -22,7 +22,7 @@ export default function Logo({ white }) {
         }
       }}
     >
-      <Image src={white ? logoWhite : logo} alt="landing page" />
+      <Image src={white ? logoWhite : logo} alt="marmara kız öğrenci yurdu logo" />
     </Link>
   );
 }

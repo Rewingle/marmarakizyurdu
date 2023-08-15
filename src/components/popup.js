@@ -4,12 +4,9 @@ import {HiOutlineX} from 'react-icons/hi'
 
 
 function Popup(props) {
-    const closeIcon = <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-    </svg>
-
+ 
     return (props.trigger) ? (
-        <Box style={styles.popup}>
+        <Box style={styles.popup} onClick={()=>{props.setTrigger(false)}}>
             <Box sx={styles.popupInner}>
                 <Box sx={styles.closeBtn} onClick={() => { props.setTrigger(false) }}><HiOutlineX color='black' size={'2em'}/></Box>
                 <Box sx={styles.content}>
@@ -23,7 +20,7 @@ function Popup(props) {
 
 const styles = {
     popup: {
-        zIndex: 100,
+        zIndex: 40,
         position: 'fixed',
         top: 0,
         left: 0,
@@ -36,7 +33,7 @@ const styles = {
     },
     popupInner: {
         position: 'relative',
-        padding: '2em',
+        padding: [null,null,'2em','2em','2em'],
         width: '100%',
         maxWidth: '1080px',
         zIndex:100,

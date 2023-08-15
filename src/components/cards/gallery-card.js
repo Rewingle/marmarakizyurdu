@@ -10,7 +10,7 @@ const GalleryCard = ({ item }) => {
     <>
       <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
         <Box>
-          <Box className={`next-image-wrapper`} sx={{ position: 'relative', height: '32em',display:'flex',alignItems:'center',justifyContent:'center' }}>
+          <Box sx={{ position: 'relative',display:'flex',alignItems:'center',justifyContent:'center' }}>
 
             <Image src={item?.full} fill style={{ objectFit: 'contain' }} />
 
