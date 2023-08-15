@@ -34,6 +34,17 @@ function Basvurular() {
             case 0:
                 return (
                     <Box>
+                        <h3>Yurt kaydını yenilemek isteyen öğrencilerin başvuruları:</h3>
+                        <p>Başvuru tarihi 15 Haziran-30 Haziran tarihleri arasıdır. Başvurusu olumlu sonuçlanan öğrenciler,
+                            yeni
+                            akademik yıl için belirlenen konaklama bedelinin %25'ini kapora olarak Haziran ayı sonuna
+                            kadar ödemekle
+                            yükümlüdürler. Kalan ödeme, akademik yıl başlangıcında havale veya anlaşmalı bankalardan
+                            kredi kartına
+                            taksitlendirme ile yapılabilir.
+                            Yeni öğrenci kayıtları başlayana kadar başvurusunu iptal eden öğrencilerin depozitoları iade
+                            edilir, kaparo
+                            tutarı için ise Yükseköğrenim Özel Barınma Hizmetleri Yönetmeliği’ndeki şartlar geçerlidir.</p>
                         <h4>Öğrenci Yurduna Yeni Başvuran Öğrencilerden İstenen Belgeler:</h4>
                         <ul>
                             <li>Başvuru formu için tıklayınız.</li>
@@ -51,6 +62,11 @@ function Basvurular() {
                             <li>Toplu yerlerde yaşamaya engel olacak seviyede akıl ve ruh hastalığı veya bulaşıcı hastalığı olmadığına daire yazılı beyanda bulunmak,</li>
 
                         </ul>
+                        <h3>Öğrenci yurdu için 15 Haziran - 30 Haziran tarihleri arasında kaydını yenileyen ve yeni kayıt yaptıran öğrenciler için
+                            başvuru iptali;
+                        </h3>
+                        <p>Üniversitenin yeni öğrenci kayıtları başlayana kadar başvurusunu iptal eden öğrencilerin depozitoları iade edilir, kapora tutarı ise
+                            iade edilmez.</p>
                     </Box>
                 )
             case 1:
@@ -65,13 +81,9 @@ function Basvurular() {
                             Haziran son bulur. Yurt burslu öğrencilerin yurtlardan son çıkış tarihi, sınıflarının final
                             sınavlarından sonraki 2 ( iki ) gündür.</p>
                         <p>Ödeme Yöntemleri:
-                            İnternetten Havale /EFT ile Peşin Ödeme
-                            Hesap Adı (Alıcı): KF TURİZM İNŞAAT TİCARET LİMİTED ŞİRKETİ
-                            Banka : Halk Bankası
-                            Şube : Moda/İSTANBUL (851)
-                            TL Hesap : Hesap No: 10260496 /
-                            IBAN No : TR05 0001 2009 8510 0010 2604 96
-                            Ödeme dekont açıklamasına öğrencinin T.C. Kimlik Numarası ve Ad Soyad bilgisi
+                            İnternetten Havale /EFT, Kredi Kartı veya Peşin Ödeme ile yapılır.
+
+                            Dekont açıklamasına öğrencinin T.C. Kimlik Numarası ve Ad Soyad bilgisi
                             yazılmalıdır.</p>
                         <h3>e-ödeme yöntemi ile ödeme yapabilmek için</h3>
                         <ul>
@@ -102,17 +114,8 @@ function Basvurular() {
                             sorumludur. Oluşan hasarı ödemekle yükümlüdür. Binaya ilk girişte oda teslim formunun eksiksiz doldurulup teslim edilmesi,
                             daha sonra oluşabilecek hasar ve kesintilere temel teşkil edeceğinden önemlidir.
                             Hesap Numaraları
-                            Özel Marmara Yükseköğrenim Kız Öğrenci Yurdu, Halk Bankası Moda Kurumsal Şubesi aşağıdaki hesaplarına yapılır</p>
-                        <p>TL Hesabı</p>
-                        <ul>
-                            <li>Hesap Adı (Alıcı): KF TURİZM İNŞAAT TİCARET LİMİTED ŞİRKETİ
-                            </li>
-                            <li>Banka : Halk Bankası
-                            </li>
-                            <li>Şube : Moda/İSTANBUL (851)</li>
-                            <li>TL Hesap : Hesap No: 10260496 /</li>
-                            <li>IBAN No : TR05 0001 2009 8510 0010 2604 96</li>
-                        </ul>
+                            Özel Marmara Yükseköğrenim Kız Öğrenci Yurdu, Halk Bankası Moda Kurumsal Şubesi hesaplarına yapılır</p>
+
                     </Box>
 
                 )
@@ -136,12 +139,17 @@ function Basvurular() {
                             Öğrenci kaldığı oda ve eşyasına hasar vermiş ise, hasar bedeli düşüldükten sonra kalan depozito tutarı, hasar verilmemiş ise
                             depozitonun tamamı öğrencinin bildirmiş olduğu çıkış tarihinden sonraki 30 (otuz) gün içinde iade edilir.
                         </p>
+                        <Box sx={{ display: 'flex' }}>
+                            <p>Depozito İade Formunu indirmek için </p>
+                            <a style={{ marginLeft: '8px',marginTop:'16px' }} href='src/assets/marmara-kiz-ogrenci-yurdu-depozito-iade-formu.docx' download>tıklayınız</a>
+
+                        </Box>
                     </Box>
                 )
             case 3:
                 return (
                     <Box sx={{ display: 'flex' }}>
-                        <Box>ÖZEL MARMARA KIZ ÖĞRENCİ YURDU BAŞVURUSU İÇİN<a href='/' style={{ marginLeft: '8px' }}>tıklayınız</a></Box>
+                        <Box>ÖZEL MARMARA KIZ ÖĞRENCİ YURDU BAŞVURUSU İÇİN</Box><Box><a href='/' style={{ marginLeft: '8px',marginTop:'16px' }}>tıklayınız</a></Box>
                     </Box>
                 )
             default:

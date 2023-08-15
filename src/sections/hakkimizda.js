@@ -14,7 +14,7 @@ function Hakkimizda() {
           <Box sx={styles.rightContent}>
             <Text as='p' sx={{ fontSize: 16, lineHeight: 2.07, textAlign: ['center', 'center', 'center', 'center'], maxWidth: 660 }}>
               Marmara Kız Öğrenci Yurdu olarak amacımız, Atatürk ilke ve inkilaplarından hiçbir zaman ödün vermeyen, laikliği daima koruyan;
-              seçkin yönetim kadrosu ile tüm öğrencilerimizin öncelikle güven, saygu ve aile sıcaklığını hissetmelerini amaçlamaktayız.
+              seçkin yönetim kadrosu ile tüm öğrencilerimizin öncelikle güven, saygı ve aile sıcaklığını hissetmelerini amaçlamaktayız.
             </Text>
             <Text as='p' sx={{ fontSize: 16, lineHeight: 2.07, textAlign: ['center', 'center', 'center', 'center'], maxWidth: 660 }}>2023 yılında açılan yurdumuz, üniversitelere ve toplu ulaşım noktalarına yakınlığıyla siz üniversiteliler için en doğru seçim olacaktır.
               Öğrencilerimizin sosyal çevre açısından da beklentilerini güvenli bir şekilde karşılamaktadır.</Text>
