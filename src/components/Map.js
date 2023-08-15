@@ -1,6 +1,4 @@
 import React from 'react'
-import { useEffect } from 'react'
-import { RiEmotionUnhappyFill } from 'react-icons/ri'
 
 function Map(props) {
 
@@ -82,7 +80,16 @@ function Map(props) {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"></iframe>
       )
-  }
+    case 7:
+      return ( //FBU
+        <iframe style={{ height: '100%', width: '100%' }}
+          title='Fenerbahçe üniversitesi yol tarifi'
+          src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d48185.13362672638!2d29.035576459983844!3d40.990877085549215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x14cab86f2bbd4cb9%3A0x7ab3e4bbaf49e753!2zS8SxdmFuw6cgU2suIE5vOjEsIE9zbWFuYcSfYSwgMzQ3MTQgS2FkxLFrw7Z5L8Swc3RhbmJ1bA!3m2!1d40.991901399999996!2d29.0287617!4m5!1s0x14cac945f68fe1fd%3A0x23112f2256fb1664!2zRmVuZXJiYWjDp2Ugw5xuaXZlcnNpdGVzaSwgQXRhdMO8cmsgTWFoIE1ldHJvcG9sIMSwc3RhbmJ1bCwgQXRhxZ9laGlyIEJsdi4sIDM0NzU4IEF0YcWfZWhpci_EsHN0YW5idWw!3m2!1d40.9941941!2d29.121060999999997!5e0!3m2!1str!2str!4v1692119987599!5m2!1str!2str"
+          allowfullscreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"></iframe>
+      )
+  }<iframe src=""></iframe>
 
 
 

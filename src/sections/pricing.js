@@ -12,7 +12,7 @@ const Pricing = () => {
 
   const [uniDirection,setUniDirection] = useState(null)
   const [selectedUni,setSelectedUni] = useState(null)
-  const Universities =['Acıbadem Üniversitesi','Marmara Üniversitesi','Üsküdar Üniversitesi','Yeditepe Üniversitesi','Maltepe Üniversitesi','Bahçeşehir Üniversitesi','29 Mayıs Üniversitesi']
+  const Universities =['Acıbadem Üniversitesi','Marmara Üniversitesi','Üsküdar Üniversitesi','Yeditepe Üniversitesi','Maltepe Üniversitesi','Bahçeşehir Üniversitesi','29 Mayıs Üniversitesi','Fenerebahçe Üniversitesi']
   const masonryOptions = {
     transitionDuration: 0,
   };
@@ -40,7 +40,7 @@ const Pricing = () => {
               
             />
        
-            <Box options={masonryOptions}>
+            <Box options={masonryOptions} sx={{my:-2}}>
               
               {Universities.map(
                 (item,index)=>(<Box key={index} sx={styles.uniSelect} onClick={()=>{setUniDirection(index);setSelectedUni(item)}}>{item}</Box>)
@@ -151,7 +151,7 @@ const styles = {
    
     m: ['0 auto 27px', '0 auto 27px', '0 auto 27px', '0 0 30px'],
     h2: {
-      fontSize: [22, 22, 22, 28, 30, 36, 46],
+      fontSize: [22, 22, 22, 28, 28, 34, 38],
       lineHeight: [1.6, 1.6, 1.6, 1.41],
       fontWeight: [500, 500, 500, 400],
     },

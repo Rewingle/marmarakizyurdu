@@ -11,6 +11,7 @@ import uskudar from 'assets/images/clients/uskudar.png';
 import marmara from 'assets/images/clients/marmara.png';
 import may29 from 'assets/images/clients/29may.png';
 import acibadem from 'assets/images/clients/acibadem.png';
+import fbu from 'assets/images/clients/fbu.webp';
 const clients = [
   {
     id: 0,
@@ -52,6 +53,12 @@ const clients = [
     name: '29 Mayıs Üniversitesi',
     logo: may29,
   },
+  
+  {
+    id: 8,
+    name: 'Fenerbahçe Üniversitesi',
+    logo: fbu,
+  }
 ];
 
 function SlickArrow({ className, onClick, control }) {
