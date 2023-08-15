@@ -14,16 +14,6 @@ import Odalarimiz from 'sections/odalarimiz';
 import Hizmetler from 'sections/hizmetlerimiz'; 
 import Whatsapp from 'components/whatsapp';
 import Basvurular from 'sections/basvurular';
-/* const Banner from 'sections/banner';
-const Clients from 'sections/clients';
-const Gallery from 'sections/gallery';
-const Pricing from 'sections/pricing';
-const Blog from 'sections/blog'; */
-/* import Subscription from 'sections/subscription';
-import Hakkimizda from 'sections/hakkimizda';
-import Odalarimiz from 'sections/odalarimiz';
-import Hizmetler from 'sections/hizmetlerimiz'; */
-
 
 
 export default function IndexPage() {
