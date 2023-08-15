@@ -98,7 +98,7 @@ export default function Banner() {
           {slideGallery?.map((item) => (
             <SwiperSlide key={item.id}>
               <Box as="figure" sx={styles.image}> 
-                <Image loading="lazy" src={item.image} alt={item.alt} sx={{ height: [null, null, null, null, '100%'], boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 10px', width: '100%', marginTop: ['3em', '3em', '6em', '8em', '8em'] }} />
+                <Image loading="lazy" src={item.image} alt={item.alt} sx={{ height: [null, null, null, null, '1691'], boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 10px', width: ['100%','100%','100%','100%','952px'], marginTop: ['3em', '3em', '6em', '8em', '8em'] }} />
 
               </Box>
             </SwiperSlide>
