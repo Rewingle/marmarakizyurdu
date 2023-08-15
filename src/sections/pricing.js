@@ -12,7 +12,7 @@ const Pricing = () => {
 
   const [uniDirection,setUniDirection] = useState(null)
   const [selectedUni,setSelectedUni] = useState(null)
-  const Universities =['Acıbadem Üniversitesi','Marmara Üniversitesi','Üsküdar Üniversitesi','Yeditepe Üniversitesi','Maltepe Üniversitesi','Bahçeşehir Üniversitesi','29 Mayıs Üniversitesi','Fenerebahçe Üniversitesi']
+  const Universities =['Acıbadem Üniversitesi','Marmara Üniversitesi','Üsküdar Üniversitesi','Yeditepe Üniversitesi','Maltepe Üniversitesi','Bahçeşehir Üniversitesi','29 Mayıs Üniversitesi','Fenerbahçe Üniversitesi']
   const masonryOptions = {
     transitionDuration: 0,
   };
