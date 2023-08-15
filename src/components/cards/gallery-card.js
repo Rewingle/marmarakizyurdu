@@ -17,7 +17,6 @@ const GalleryCard = ({ item }) => {
           </Box>
         </Box>
 
-
       </Popup>
       <Flex as="figure" sx={styles.figure} onClick={() => { setButtonPopup(true) }}>
         <Image loading="lazy" src={item?.image} alt={item?.alt} />

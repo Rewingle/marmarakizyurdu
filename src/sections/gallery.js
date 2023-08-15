@@ -8,15 +8,15 @@ import Link from 'next/link';
 import gallery1 from 'assets/images/gallery/oda2.webp';
 import gallery2 from 'assets/images/gallery/oda3.webp';
 import gallery3 from 'assets/images/gallery/oda1.webp';
-import gallery4 from 'assets/images/gallery/oda5.webp';
-import gallery5 from 'assets/images/gallery/oda4.webp';
-import gallery6 from 'assets/images/gallery/oda6.webp';
-import gallery7 from 'assets/images/gallery/oda7.webp';
-import gallery8 from 'assets/images/gallery/oda8.webp';
-import gallery9 from 'assets/images/gallery/oda9.webp';
-import gallery10 from 'assets/images/gallery/oda10.webp';
-import gallery11 from 'assets/images/gallery/oda11.webp';
-import gallery12 from 'assets/images/gallery/oda12.webp';
+import gallery4 from 'assets/images/gallery/oda4.webp';
+import gallery5 from 'assets/images/gallery/oda7.webp';
+import gallery6 from 'assets/images/gallery/oda12.webp';
+import full1 from 'assets/images/gallery/full/2.webp';
+import full2 from 'assets/images/gallery/full/3.webp';
+import full3 from 'assets/images/gallery/full/1.webp';
+import full4 from 'assets/images/gallery/full/4.webp';
+import full5 from 'assets/images/gallery/full/7.webp';
+import full6 from 'assets/images/gallery/full/12.webp';
 
 
 const masonryOptions = {
@@ -34,43 +34,46 @@ const Gallery = () => {
         />
 
         <Box as={Masonry} options={masonryOptions} sx={styles.galleryWrapper}>
-        
-          
+
+
           <GalleryCard item={{
             id: 1,
-            image: gallery2,
-            alt: 'kız yurt odası'
-          }} />
-
-          <GalleryCard  item={{
-            id: 2,
-            image: gallery3,
-            alt: 'kız yurt odası',
-          }} />
-          <GalleryCard  item={{
-            id: 4,
-            image: gallery12,
-            alt: 'kız yurt odası',
-          }} />
-          <GalleryCard  item={{
-            id: 3,
             image: gallery1,
             alt: 'kız yurt odası',
+            full: full1
           }} />
-          <GalleryCard  item={{
+
+          <GalleryCard item={{
+            id: 2,
+            image: gallery2,
+            alt: 'kız yurt odası',
+            full: full2
+          }} />
+          <GalleryCard item={{
+            id: 4,
+            image: gallery3,
+            alt: 'kız yurt odası',
+            full: full3
+          }} />
+          <GalleryCard item={{
+            id: 3,
+            image: gallery4,
+            alt: 'kız yurt odası',
+            full: full4
+          }} />
+          <GalleryCard item={{
             id: 5,
             image: gallery5,
             alt: 'kız yurt odası',
+            full: full5
           }} />
-         
-          <GalleryCard  item={{
+
+          <GalleryCard item={{
             id: 6,
-            image: gallery7,
+            image: gallery6,
             alt: 'kız yurt odası',
+            full: full6
           }} />
-        
-        
-         
 
         </Box>
         <Link href="/galeri"><a>
@@ -88,11 +91,11 @@ const styles = {
   section: {
     pt: [30, 30, 40, 50, 60],
     pb: [60, 60, 60, 90, 80, 120],
-    backgroundColor:'#10132d'
+    backgroundColor: '#10132d'
   },
   heading: {
-    color:'white',
-    fontWeight:'600',
+    color: 'white',
+    fontWeight: '600',
     mb: [30, 30, 40, 60],
   },
   galleryWrapper: {
