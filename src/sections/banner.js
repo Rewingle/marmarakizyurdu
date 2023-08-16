@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Box} from 'theme-ui';
+import { jsx, Box, Button } from 'theme-ui';
 import { rgba } from 'polished';
 import { useRef, useEffect, useState } from 'react';
 import Image from 'components/image';
@@ -8,7 +8,7 @@ import banner2 from 'assets/images/render10.webp'
 import banner3 from 'assets/images/banner2.webp'
 import banner4 from 'assets/images/render2.webp'
 import banner5 from 'assets/images/render3.webp'
-
+import Link from 'next/link'
 //import { useNavigate } from 'react-router-dom'
 import SwiperCore, { Autoplay, Pagination, EffectFade } from 'swiper';
 // Import Swiper React components
@@ -22,7 +22,7 @@ export default function Banner() {
   const [currentWidth, setCurrentWidth] = useState(0);
   let time = 3;
   let tick, percentTime;
-  
+
   const swiperRef = useRef(null);
   function startProgressbar() {
     resetProgressbar();
@@ -80,11 +80,21 @@ export default function Banner() {
     },
 
   ]
+  const Basvur = () => {
+    return (
+      <Link href='/basvur' passHref >
+        <a target='_blank' rel="noopener noreferrer">
+          <Button sx={styles.joinNow} variant="primaryMd">
+            Şimdi başvur
+          </Button>
+        </a>
+      </Link>
+    )
+  }
   //1691x952
   return (
     <Box id="home" as="section" sx={styles.section}>
-      <Box>
-
+      <Box sx={{display:'flex',alignItems:'center',justifyContent:'center',position:'relative'}}>
         <Swiper
           loop={true}
           effect="fade"
@@ -96,13 +106,14 @@ export default function Banner() {
         >
           {slideGallery?.map((item) => (
             <SwiperSlide key={item.id}>
-              <Box as="figure" sx={styles.image}> 
+              <Box as="figure" sx={styles.image}>
                 <Image loading="lazy" src={item.image} alt={item.alt} sx={{ height: [null, null, null, null, '1691'], boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 10px', width: '100%', marginTop: ['3em', '3em', '6em', '8em', '8em'] }} />
 
               </Box>
             </SwiperSlide>
           ))}
         </Swiper>
+        
       </Box>
     </Box>
   );
@@ -110,7 +121,7 @@ export default function Banner() {
 
 const styles = {
   section: {
-    
+
   },
   contentWrapper: {
     display: 'flex',
@@ -144,11 +155,11 @@ const styles = {
       padding: '30px 50px 25px',
     },
   },
- 
+
   image: {
-    position: 'relative',
+
     height: [null, null, null, null, '100vh'],
-    width: ['100%',null,null,null,null],
+    width: ['100%', null, null, null, null],
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center'
@@ -159,6 +170,15 @@ const styles = {
     select: {
       minWidth: ['auto', 'auto', 'initial'],
     },
+  },
+  joinNow: {
+    marginLeft: 'auto',
+    fontFamily: "Helvetica",
+    position:'absolute',
+    tmargin:'auto',
+    bottom:'8em',
+    left:'50%',
+    zIndex:1000
   },
   button: {
     fontSize: 20,

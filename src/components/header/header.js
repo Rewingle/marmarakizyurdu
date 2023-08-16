@@ -63,16 +63,20 @@ export default function Header() {
                         }}>{label}</a></Link>}
                     </li>
                   ))}
-                  
+
                 </Box>
-                <Button sx={styles.joinNow} variant="primaryMd" onClick={()=>{window.open("https://s1.livinsoft.com/student/pre-registration/dorms/marmara-kiz-yurdu/23",'_blank')}}>
-                  Şimdi başvur
-                </Button>
+                <Link href='/basvur' passHref >
+                  <a target='_blank' rel="noopener noreferrer">
+                    <Button sx={styles.joinNow} variant="primaryMd"  >
+                      Şimdi başvur
+                    </Button>
+                  </a>
+                </Link>
               </Flex>
 
               {mobileMenu ? (
                 <Button variant="text" sx={styles.closeButton}>
-                  <GrClose onClick={closeMobileMenu} size="20px" color='#fff' style={{':hover':{cursor:'pointer'}}} />
+                  <GrClose onClick={closeMobileMenu} size="20px" color='#fff' style={{ ':hover': { cursor: 'pointer' } }} />
                 </Button>
               ) : (
                 <MenuButton sx={styles.toggleMenu}
@@ -186,7 +190,7 @@ const styles = {
     minHeight: 'auto',
     width: '32px',
     ml: '3px',
-    ':hover':{cursor:'pointer'},
+    ':hover': { cursor: 'pointer' },
     backgroundColor: 'white',
     borderRadius: '50%'
   },

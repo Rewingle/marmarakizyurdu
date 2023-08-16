@@ -41,7 +41,7 @@ export default function SEO({
       content: description,
     },
   ].concat(meta);
-  console.log(metaData)
+ 
   return (
     <Head>
       <title>{title}</title>
