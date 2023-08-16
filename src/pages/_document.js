@@ -11,6 +11,7 @@ class CustomDocument extends Document {
       <Html lang="tr-TR">
         <Head>
           <link rel="icon" href="/static/marmarakizogrenciyurdu.ico" ></link>
+          <link rel="shortcut icon" href="/static/logo.png" type="image/png"/> 
           <meta name='Marmara kız öğrenci yurdu' content='Kadıköy kız öğrenci yurdu'></meta>
           <meta name='description' content="Kadıköy'ün merkezinde otel konforunda kız öğrenci yurdu. Erken dönem kayıt avantajlarını kaçırmayın"></meta>
         </Head>
