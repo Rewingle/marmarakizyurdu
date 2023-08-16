@@ -149,7 +149,7 @@ function Basvurular() {
             case 3:
                 return (
                     <Box sx={{ display: 'flex' }}>
-                        <Box>ÖZEL MARMARA KIZ ÖĞRENCİ YURDU BAŞVURUSU İÇİN</Box><Box><a href='/' style={{ marginLeft: '8px',marginTop:'16px' }}>tıklayınız</a></Box>
+                        <Box>ÖZEL MARMARA KIZ ÖĞRENCİ YURDU BAŞVURUSU İÇİN</Box><Box><a href='https://s1.livinsoft.com/student/pre-registration/dorms/marmara-kiz-yurdu/23' style={{ marginLeft: '8px',marginTop:'16px' }}>tıklayınız</a></Box>
                     </Box>
                 )
             default:
