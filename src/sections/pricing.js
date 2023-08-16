@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { useState } from 'react';
-import { jsx, Box, Container, Flex, Button,Select} from 'theme-ui';
+import { jsx, Box, Container, Flex} from 'theme-ui';
 import SectionHeading from 'components/section-heading';
 import Map from 'components/Map'
 import { rgba } from 'polished';

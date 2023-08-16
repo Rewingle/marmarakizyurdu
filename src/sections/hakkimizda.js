@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Flex, Container, Input, Button, Text } from 'theme-ui';
+import { Box, Flex, Container, Text } from 'theme-ui';
 import SectionHeading from 'components/section-heading';
 
 function Hakkimizda() {
