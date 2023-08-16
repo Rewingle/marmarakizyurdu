@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Box, Container, Grid, Button } from 'theme-ui'
-import SectionHeading from 'components/section-heading';
-import { RiArrowRightSLine } from 'react-icons/ri';
+import Link from 'next/link'
 
 function Basvurular() {
 
@@ -149,7 +148,7 @@ function Basvurular() {
             case 3:
                 return (
                     <Box sx={{ display: 'flex' }}>
-                        <Box>ÖZEL MARMARA KIZ ÖĞRENCİ YURDU BAŞVURUSU İÇİN</Box><Box><a href='https://s1.livinsoft.com/student/pre-registration/dorms/marmara-kiz-yurdu/23' style={{ marginLeft: '8px',marginTop:'16px' }}>tıklayınız</a></Box>
+                        <Box>ÖZEL MARMARA KIZ ÖĞRENCİ YURDU BAŞVURUSU İÇİN</Box><Box><Link href='/basvur'>tıklayınız</Link><Box></Box></Box>
                     </Box>
                 )
             default:
