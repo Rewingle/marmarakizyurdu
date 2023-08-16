@@ -9,7 +9,11 @@ class CustomDocument extends Document {
   render() {
     return (
       <Html lang="tr-TR">
-        <Head><link rel="icon" href="/static/marmarakizogrenciyurdu.ico" ></link><meta name='Marmara kız öğrenci yurdu' content='Kadıköy kız öğrenci yurdu'></meta></Head>
+        <Head>
+          <link rel="icon" href="/static/marmarakizogrenciyurdu.ico" ></link>
+          <meta name='Marmara kız öğrenci yurdu' content='Kadıköy kız öğrenci yurdu'></meta>
+          <meta name='description' content="Kadıköy'ün merkezinde otel konforunda kız öğrenci yurdu. Erken dönem kayıt avantajlarını kaçırmayın"></meta>
+        </Head>
         <body>
           <Main />
           <NextScript />
