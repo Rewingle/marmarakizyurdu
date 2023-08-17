@@ -65,13 +65,13 @@ export default function Header() {
                   ))}
 
                 </Box>
-                <Link href='/basvur' passHref >
+                {mobileMenu ? <Link href='/basvur' passHref >
                   <a target='_blank' rel="noopener noreferrer">
                     <Button sx={styles.joinNow} variant="primaryMd"  >
                       Şimdi başvur
                     </Button>
                   </a>
-                </Link>
+                </Link> : null}
               </Flex>
 
               {mobileMenu ? (
@@ -94,7 +94,8 @@ export default function Header() {
 
 const styles = {
   headerWrapper: {
-    zIndex:1000,
+    zIndex: 1000,
+    position:'relative',
     '.is-sticky': {
       header: {
         backgroundColor: '#10132d',
@@ -120,12 +121,13 @@ const styles = {
      }, */
   },
   toggleMenu: {
-    color: 'white'
+    color: 'white',
   },
   headerInner: {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
+    zIndex: 1000,
     '@media only screen and (max-width: 968px)': {
       '.navbar': {
         position: 'absolute',
@@ -168,6 +170,9 @@ const styles = {
     display: ['flex'],
     listStyle: 'none',
     marginLeft: 'auto',
+    alignItems: 'center',
+    justifyContent: 'center',
+    zIndex:1000,
     p: 0,
     backgroundColor: '#10132d',
     '.nav-item': {

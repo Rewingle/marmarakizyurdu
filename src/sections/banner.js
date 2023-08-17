@@ -127,7 +127,7 @@ export default function Banner() {
         </Swiper>
         <Link href='/basvur' passHref >
           <a target='_blank' rel="noopener noreferrer">
-            <Button sx={{ position: 'absolute', top: ['100%', '100%', '90%', '85%', '85%'], px: 6, fontSize: '22px', left: '50%', transform: 'translate(-50%, -50%)', zIndex: 500, fontFamily: 'Helvetica' }}>Şimdi Başvur</Button>
+            <Button sx={{ position: 'absolute', top: ['100%', '100%', '90%', '85%', '85%'], px: 6, fontSize: '22px', left: '50%', transform: 'translate(-50%, -50%)', zIndex: 100, fontFamily: 'Helvetica' }}>Şimdi Başvur</Button>
 
           </a>
         </Link>
