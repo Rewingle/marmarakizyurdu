@@ -17,7 +17,7 @@ export default [
   },
   {
     path: 'basvurular',
-    label: 'Basvurular'
+    label: 'Başvurular'
   },
   {
     path: 'gallery',

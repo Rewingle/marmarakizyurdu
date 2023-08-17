@@ -95,7 +95,8 @@ export default function Header() {
 const styles = {
   headerWrapper: {
     zIndex: 1000,
-    position:'relative',
+    position: 'relative',
+    fontFamily: 'Helvetica',
     '.is-sticky': {
       header: {
         backgroundColor: '#10132d',
@@ -172,7 +173,7 @@ const styles = {
     marginLeft: 'auto',
     alignItems: 'center',
     justifyContent: 'center',
-    zIndex:1000,
+    zIndex: 1000,
     p: 0,
     backgroundColor: '#10132d',
     '.nav-item': {
