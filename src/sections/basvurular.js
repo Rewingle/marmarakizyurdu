@@ -103,7 +103,7 @@ function Basvurular() {
                             Bankalar + taksit imkanlarını, kayıt tarihlerinde duyurmaktadır.
                             Taksit imkânları kartların özellikli durumlarına göre değişmekte, ticari kartlara + taksit
                             imkânı banka tarafından sunulmamaktadır. Taksitli işlemlerin gerçekleşmemesi
-                            durumunda ve vade farkı oranları hakkında bilgi almak için üniversitemiz Mali İşleri
+                            durumunda ve vade farkı oranları hakkında bilgi almak için yurdumuz Mali İşleri
                             birimini arayarak detaylı bilgi alabilirsiniz.
                         </p>
                         <h3>Depozito</h3>
