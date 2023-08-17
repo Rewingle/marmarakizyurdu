@@ -94,7 +94,7 @@ export default function Header() {
 
 const styles = {
   headerWrapper: {
-
+    zIndex:1000,
     '.is-sticky': {
       header: {
         backgroundColor: '#10132d',

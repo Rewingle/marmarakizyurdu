@@ -82,19 +82,33 @@ export default function Banner() {
   ]
   const Basvur = () => {
     return (
-      <Link href='/basvur' passHref >
-        <a target='_blank' rel="noopener noreferrer">
-          <Button sx={styles.joinNow} variant="primaryMd">
-            Şimdi başvur
-          </Button>
-        </a>
-      </Link>
+      <Box sx={{
+        zIndex: 100,
+        display: 'block',
+        marginLeft: 'auto',
+
+        position: 'absolute',
+        tmargin: 'auto',
+        bottom: '8em',
+        left: '46%',
+        position: 'absolute'
+      }}>
+        <Link href='/basvur' passHref >
+          <a target='_blank' rel="noopener noreferrer">
+            <Button variant="primaryMd" sx={{ fontFamily: "Helvetica", zIndex: 200 }}>
+              Şimdi başvur
+            </Button>
+          </a>
+        </Link>
+      </Box >
     )
   }
   //1691x952
   return (
     <Box id="home" as="section" sx={styles.section}>
-      <Box sx={{display:'flex',alignItems:'center',justifyContent:'center',position:'relative'}}>
+
+      <Box sx={{ width: '100%', position: 'relative' }}>
+
         <Swiper
           loop={true}
           effect="fade"
@@ -102,18 +116,21 @@ export default function Banner() {
           spaceBetween={0}
           slidesPerView={1}
           pagination={true}
-          style={{ width: '100%' }}
         >
           {slideGallery?.map((item) => (
             <SwiperSlide key={item.id}>
               <Box as="figure" sx={styles.image}>
                 <Image loading="lazy" src={item.image} alt={item.alt} sx={{ height: [null, null, null, null, '1691'], boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 10px', width: '100%', marginTop: ['3em', '3em', '6em', '8em', '8em'] }} />
-
               </Box>
             </SwiperSlide>
           ))}
         </Swiper>
-        
+        <Link href='/basvur' passHref >
+          <a target='_blank' rel="noopener noreferrer">
+            <Button sx={{ position: 'absolute', top: ['100%', '100%', '90%', '85%', '85%'], px: 6, fontSize: '22px', left: '50%', transform: 'translate(-50%, -50%)', zIndex: 500, fontFamily: 'Helvetica' }}>Şimdi Başvur</Button>
+
+          </a>
+        </Link>
       </Box>
     </Box>
   );
@@ -150,7 +167,7 @@ const styles = {
     borderRadius: 5,
     m: ['110px 0 0', null, null, '110px auto 0', '60px 0 0', null, 0],
     '@media only screen and (min-height: 720px) and (max-height: 760px), (min-width: 1501px) and (max-width: 1560px) ': {
-      maxWidth: 515,
+
       mt: 70,
       padding: '30px 50px 25px',
     },
@@ -171,15 +188,7 @@ const styles = {
       minWidth: ['auto', 'auto', 'initial'],
     },
   },
-  joinNow: {
-    marginLeft: 'auto',
-    fontFamily: "Helvetica",
-    position:'absolute',
-    tmargin:'auto',
-    bottom:'8em',
-    left:'50%',
-    zIndex:1000
-  },
+
   button: {
     fontSize: 20,
     fontWeight: 700,

@@ -1,18 +1,19 @@
 /** @jsx jsx */
 import { useState } from 'react';
-import { jsx, Box, Container, Flex} from 'theme-ui';
+import { jsx, Box, Container, Flex } from 'theme-ui';
 import SectionHeading from 'components/section-heading';
 import Map from 'components/Map'
 import { rgba } from 'polished';
 import { keyframes } from '@emotion/core';
-
-
+import Bus from '../assets/images/icons/bus.png'
+import Image from 'components/image';
+import loc from '../assets/images/icons/loc.png'
 
 const Pricing = () => {
 
-  const [uniDirection,setUniDirection] = useState(null)
-  const [selectedUni,setSelectedUni] = useState(null)
-  const Universities =['Acıbadem Üniversitesi','Marmara Üniversitesi','Üsküdar Üniversitesi','Yeditepe Üniversitesi','Maltepe Üniversitesi','Bahçeşehir Üniversitesi','29 Mayıs Üniversitesi','Fenerbahçe Üniversitesi']
+  const [uniDirection, setUniDirection] = useState(null)
+  const [selectedUni, setSelectedUni] = useState(null)
+  const Universities = ['Acıbadem Üniversitesi', 'Marmara Üniversitesi', 'Üsküdar Üniversitesi', 'Yeditepe Üniversitesi', 'Maltepe Üniversitesi', 'Bahçeşehir Üniversitesi', '29 Mayıs Üniversitesi', 'Fenerbahçe Üniversitesi']
   const masonryOptions = {
     transitionDuration: 0,
   };
@@ -22,37 +23,43 @@ const Pricing = () => {
         <SectionHeading
           sx={styles.heading}
           slogan="ULAŞIM"
-          
-        />
-      
-      <Box as="section" sx={styles.section}>
 
-      <Container>
-        <Flex sx={styles.contentWrapper}>
-            <Flex sx={styles.mapWrapper}>
-            <Map uniDirection={uniDirection}/>
+        />
+
+        <Box as="section" sx={styles.section}>
+
+          <Container>
+            <Flex sx={styles.contentWrapper}>
+              <Flex sx={styles.mapWrapper}>
+                <Map uniDirection={uniDirection} />
+              </Flex>
+
+              <Box sx={styles.rightContent}>
+                <SectionHeading
+                  sx={styles.heading1}
+                  title="Üniversitenize yol tarifi alın."
+
+                />
+
+                <Box options={masonryOptions} sx={{ my: -2 }}>
+
+                  {Universities.map(
+                    (item, index) => (
+                      <Box key={index} sx={styles.uniSelect} onClick={() => { setUniDirection(index); setSelectedUni(item) }}>
+                        <Image src={Bus} style={{ marginLeft: '1em' }} />
+                        <Box sx={{ marginLeft: '8px', fontFamily: 'Helvetica' }}>{item}</Box>
+                      </Box>
+                    )
+                  )}
+
+                </Box>
+
+              </Box>
             </Flex>
-          
-          <Box sx={styles.rightContent}>
-            <SectionHeading
-              sx={styles.heading1}
-              title="Üniversitenize yol tarifi alın."
-              
-            />
-       
-            <Box options={masonryOptions} sx={{my:-2}}>
-              
-              {Universities.map(
-                (item,index)=>(<Box key={index} sx={styles.uniSelect} onClick={()=>{setUniDirection(index);setSelectedUni(item)}}>{item}</Box>)
-              )}
-              
-            </Box>
-            
-          </Box>
-        </Flex>
+            <Box sx={{ fontWeight: '600', width: '100%', fontSize: '18px', fontFamily: 'Helvetica',display:'flex',mt:3 }}><Image src={loc}/>Kıvanç Sk. No:1, Osmanağa, 34714 Kadıköy/Istanbul</Box>
+          </Container>
+        </Box>
       </Container>
-    </Box>
-      </Container> 
     </Box>
   );
 };
@@ -88,32 +95,32 @@ const styles = {
     color: '#fff',
     mb: 20,
     p: {
-      
-      fontSize:'28px',
+
+      fontSize: '28px',
       fontFamily: 'DM Sans,sans-serif'
     },
   },
-  selectStyle:{
-    mb: [3,3,0,0,0],
-   
-    
+  selectStyle: {
+    mb: [3, 3, 0, 0, 0],
+
+
   },
-  uniSelect:{
-    justifyContent:'center',
-    display:'flex',
-    p:1,
-    fontSize:'20px',
+  uniSelect: {
+
+    display: 'flex',
+    p: 1,
+    fontSize: '20px',
     boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px', borderRadius: '1em',
-    mb:3,
-    ':hover':{
+    mb: 3,
+    ':hover': {
       backgroundColor: 'purple',
-      cursor:'pointer',
-      borderRadius:'8px',
-      color:'white'
+      cursor: 'pointer',
+      borderRadius: '8px',
+      color: 'white'
     }
   },
   contentWrapper: {
-    
+
     display: ['flex'],
     alignItems: ['center'],
     flexDirection: [
@@ -123,9 +130,9 @@ const styles = {
       'row',
     ],
   },
-  mapWrapper:{
-    width:['20em','25em','40em','60em','90em'],
-    height:['20em','28em','28em','28em','32em']
+  mapWrapper: {
+    width: ['20em', '25em', '40em', '60em', '90em'],
+    height: ['20em', '28em', '28em', '28em', '32em']
   },
   illustration: {
     alignItems: ['flex-start'],
@@ -134,12 +141,12 @@ const styles = {
   },
   rightContent: {
     m: [0, 0, 0, 0, '0px 48px 0px 0px', '0px 95px 0px 0px'],
-    pl: [0,3,3,3]
+    pl: [0, 3, 3, 3]
   },
-  uniButton:{
+  uniButton: {
     mr: 3,
     mt: 3,
-    ':hover':{
+    ':hover': {
       cursor: 'pointer'
     }
   },
@@ -147,8 +154,8 @@ const styles = {
     textAlign: ['center', 'center', 'center', 'left'],
     marginLeft: 0,
     maxWidth: 580,
-    pl: ['0em','2em','2em','2em','2em'],
-   
+    pl: ['0em', '2em', '2em', '2em', '2em'],
+
     m: ['0 auto 27px', '0 auto 27px', '0 auto 27px', '0 0 30px'],
     h2: {
       fontSize: [22, 22, 22, 28, 28, 34, 38],
@@ -171,7 +178,7 @@ const styles = {
       px: ['18px', '18px', '18px', '25px'],
       fontSize: [14, 14, 14, 16],
       fontWeight: 500,
-    
+
       '&.active': {
         backgroundColor: '#fff',
         color: 'text',
