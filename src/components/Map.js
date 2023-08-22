@@ -1,9 +1,7 @@
 import React from 'react'
 
 function Map(props) {
-
   const university = props.uniDirection
-
   switch (university) {
     case null:
       return (
@@ -12,8 +10,7 @@ function Map(props) {
           loading="lazy"
           allowFullScreen
           referrerPolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDnbLKuhD1W-PTsbTDV6pZoOuySa0d01D4
-          &q=Osmanağa,+Kıvanç+Sk.+No:1,+34714+Kadıköy/İstanbul&zoom=15">
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d25522.435255749948!2d29.023879598697892!3d40.9979820808235!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab9a5f7c74781%3A0xdbab49e3abd7bc62!2zw5Z6ZWwgTWFybWFyYSBZw7xrc2Vrw7bEn3JlbmltIEvEsXogw5bEn3JlbmNpIFl1cmR1!5e0!3m2!1str!2str!4v1692700403302!5m2!1str!2str">
         </iframe>
       )
     case 1:

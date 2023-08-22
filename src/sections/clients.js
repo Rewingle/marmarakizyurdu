@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx, Box, Button, Container, Image, Heading } from 'theme-ui';
-import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
+import { HiArrowNarrowLeft, HiArrowNarrowRight } from 'react-icons/hi';
 import Slider from 'react-slick';
 import SectionHeading from 'components/section-heading';
 import yeditepe from 'assets/images/clients/yeditepe.png';
@@ -70,9 +70,9 @@ function SlickArrow({ className, onClick, control }) {
       onClick={onClick}
     >
       {control === 'prev' ? (
-        <BsArrowLeft title='Sola kaydır' size="32px" style={{ marginRight: '4em', width: '32px' }} />
+        <HiArrowNarrowLeft title='Sola kaydır' size="32px" style={{ marginRight: '4em', width: '32px' }} />
       ) : (
-        <BsArrowRight title='Sağa kaydır' size="32px" style={{ marginLeft: '4em', width: '32px' }} />
+        <HiArrowNarrowRight title='Sağa kaydır' size="32px" style={{ marginLeft: '4em', width: '32px' }} />
       )}
     </Button>
   );

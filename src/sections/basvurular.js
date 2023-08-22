@@ -13,7 +13,7 @@ function Basvurular() {
         {
             index: 1,
             line1: 'ÜCRETLER',
-            line2: 'DEPOZİTO'
+            line2: 'DEPOZITO'
         },
         {
             index: 2,
@@ -177,7 +177,7 @@ function Basvurular() {
     return (
         <Box id='basvurular' as='section' sx={styles.section}>
             <Container sx={{ width: '100%', justifyContent: 'center', borderRadius: '1em' }}>
-                <Grid sx={{ display: 'flex', gridTemplateColumns: '1fr 1fr 1fr 1fr', gridGap: [null, null, null, '4em', '4em'], borderBottom: '4px solid #8D448B' }}>
+                <Grid sx={{ display: 'flex', gridTemplateColumns: '1fr 1fr 1fr 1fr', gridGap: [null, null, null, '4em', '4em'], borderBottom: '4px solid #8D448B',fontFamily:'Helvetica' }}>
                     {tabs?.map((tab) => (
                         <>
                             {selectedTab == tab.index ? <Button onClick={() => setSelectedTab(tab.index)} sx={styles.button}>

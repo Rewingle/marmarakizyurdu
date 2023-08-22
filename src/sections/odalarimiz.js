@@ -139,7 +139,7 @@ function Odalarimiz() {
                         <Box sx={{width:['100%',null,null,null,'30%'],ml:[0,null,null,null,5],mt:[4,null,null,null,null]}}>
                             <Link href="/galeri"><a>
                                 <Button variant="muted" sx={styles.button}>
-                                    Daha fazlası <RiArrowRightSLine size="20px" />
+                                    Galeriye gitmek için tıklayın <RiArrowRightSLine size="20px" />
                                 </Button></a>
                             </Link>
                         </Box>
@@ -209,7 +209,7 @@ const styles = {
     },
     button: {
         minHeight: [50, 50, 50, 60],
-        fontSize: [14, 14, 16],
+        fontSize: [16, 18, 20],
         width: '100%',
         svg: {
             transition: 'margin-left 0.3s ease-in-out 0s',

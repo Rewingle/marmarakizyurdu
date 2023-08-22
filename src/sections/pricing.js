@@ -56,7 +56,7 @@ const Pricing = () => {
 
               </Box>
             </Flex>
-            <Box sx={{ fontWeight: '600', width: '100%', fontSize: '18px', fontFamily: 'Helvetica',display:'flex',mt:3 }}><Image src={loc}/>Kıvanç Sk. No:1, Osmanağa, 34714 Kadıköy/Istanbul</Box>
+            <Box sx={{ fontWeight: '600', width: '100%', fontSize: '18px', fontFamily: 'Helvetica',display:'flex',mt:3,textDecoration:'none',textUnderline:'none',color:'black',textStyle:'none' }}><a href='https://goo.gl/maps/HnAjBRkRMnsBHi7x8'>Kıvanç Sk. No:1, Osmanağa, 34714 Kadıköy/Istanbul</a></Box>
           </Container>
         </Box>
       </Container>

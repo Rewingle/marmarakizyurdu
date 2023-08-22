@@ -128,6 +128,7 @@ const styles = {
         py: 2,
         display: 'grid',
         gridTemplateColumns: '1fr 10fr',
-        boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px', borderRadius: '1em'
+        boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px', borderRadius: '1em',
+        fontFamily:'Helvetica'
     }
 }
