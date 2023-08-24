@@ -140,7 +140,7 @@ function Basvurular() {
                         </p>
                         <Box sx={{ display: 'flex' }}>
                             <p>Depozito İade Formunu indirmek için </p>
-                            <a style={{ marginLeft: '8px',marginTop:'16px' }} href='src/assets/marmara-kiz-ogrenci-yurdu-depozito-iade-formu.docx' download>tıklayınız</a>
+                            <a style={{ marginLeft: '8px', marginTop: '16px' }} href='src/assets/marmara-kiz-ogrenci-yurdu-depozito-iade-formu.docx' download>tıklayınız</a>
 
                         </Box>
                     </Box>
@@ -176,8 +176,8 @@ function Basvurular() {
 
     return (
         <Box id='basvurular' as='section' sx={styles.section}>
-            <Container sx={{ width: '100%', justifyContent: 'center', borderRadius: '1em' }}>
-                <Grid sx={{ display: 'flex', gridTemplateColumns: '1fr 1fr 1fr 1fr', gridGap: [null, null, null, '4em', '4em'], borderBottom: '4px solid #8D448B',fontFamily:'Helvetica' }}>
+            <Container sx={{ width: '100%', justifyContent: 'center', borderRadius: '1em', fontFamily: 'Helvetica' }}>
+                <Grid sx={{ display: 'flex', gridTemplateColumns: '1fr 1fr 1fr 1fr', gridGap: [null, null, null, '4em', '4em'], borderBottom: '4px solid #8D448B', fontFamily: 'Helvetica' }}>
                     {tabs?.map((tab) => (
                         <>
                             {selectedTab == tab.index ? <Button onClick={() => setSelectedTab(tab.index)} sx={styles.button}>

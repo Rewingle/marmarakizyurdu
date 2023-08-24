@@ -52,15 +52,31 @@ export default function Header() {
 
                   {menuItems.map(({ path, label }, i) => (
                     <li key={i}>
-                      {isHome ? <NavLink
-                        path={path}
-                        label={label}
-                        onClick={closeMobileMenu}
-                      /> : <Link href='/' onClick={closeMobileMenu}>
-                        <a style={{
-                          color: 'white', lineHeigh: '1.5', fontWeight: 'normal', boxSizing: 'border-box',
-                          listStyle: 'none', textDecoration: 'none', ':hover': { cursor: 'pointer' }, marginRight: '2.8em',
-                        }}>{label}</a></Link>}
+                      {path == 'gallery' ?
+                        <Link href='/galeri'>
+                          <NavLink
+                            label={label}
+                            onClick={closeMobileMenu}
+                          />
+                        </Link>
+
+                        : isHome ? <NavLink
+                          path={path}
+                          label={label}
+                          onClick={closeMobileMenu}
+                        /> : path == 'gallery' ?
+
+                          <Link href='/' onClick={closeMobileMenu}>
+                            <a style={{
+                              color: 'white', lineHeigh: '1.5', fontWeight: 'normal', boxSizing: 'border-box',
+                              listStyle: 'none', textDecoration: 'none', ':hover': { cursor: 'pointer' }, marginRight: '2.8em',
+                            }}>{label}</a></Link> : <Link href='/galeri'>
+                            <NavLink
+                              label={label}
+                              onClick={closeMobileMenu}
+                            />
+                          </Link>
+                      }
                     </li>
                   ))}
 
