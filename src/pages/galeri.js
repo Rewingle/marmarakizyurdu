@@ -33,6 +33,10 @@ import full12 from 'assets/images/gallery/full/12.webp';
 import plan1 from 'assets/images/gallery/plan/plan1.webp';
 import plan2 from 'assets/images/gallery/plan/plan2.webp';
 import plan3 from 'assets/images/gallery/plan/plan3.webp';
+import banyo2 from 'assets/images/gallery/banyo2min.webp';
+import banyo1 from 'assets/images/gallery/banyo1min.webp';
+import banyo1full from 'assets/images/gallery/banyo1full.webp';
+import banyo2full from 'assets/images/gallery/banyo2full.webp';
 
 function galeri() {
   const data = {
@@ -109,6 +113,7 @@ function galeri() {
         title: 'Oda-12',
         full: full12
       },
+      
     ],
     planlar: [
       {
@@ -127,7 +132,22 @@ function galeri() {
         title: 'Çatı Arası Piyesi Kat Planı',
         full: plan3
       },
+    ],
+    banyolar:[
+      {
+        id:1,
+        image: banyo1,
+        title: 'Banyolu oda',
+        full: banyo1full
+      },
+      {
+        id:2,
+        image: banyo2,
+        title: 'Banyolu oda',
+        full: banyo2full
+      }
     ]
+   
   };
 
   const masonryOptions = {
@@ -145,6 +165,16 @@ function galeri() {
             />
             <Box as={Masonry} options={masonryOptions} sx={styles.galleryWrapper}>
               {data.planlar?.map((item) => (
+                <GalleryCard key={item.id} item={item} />
+              ))}
+            </Box>
+            <SectionHeading
+              sx={styles.heading}
+              title="Banyolar"
+            />
+
+            <Box as={Masonry} options={masonryOptions} sx={styles.galleryWrapper}>
+              {data.banyolar?.map((item) => (
                 <GalleryCard key={item.id} item={item} />
               ))}
             </Box>
