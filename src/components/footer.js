@@ -63,7 +63,7 @@ export default function Footer() {
           <Box>
             <br/>
             <a href={'https://www.google.com/maps/place/Osmana%C4%9Fa,+K%C4%B1van%C3%A7+Sk.+No:1,+34714+Kad%C4%B1k%C3%B6y%2F%C4%B0stanbul/@40.9919014,29.0261814,17z/data=!3m1!4b1!4m6!3m5!1s0x14cab86f2bbd4cb9:0x7ab3e4bbaf49e753!8m2!3d40.9919014!4d29.0287617!16s%2Fg%2F11c5jkbyqs?entry=ttu'}
-              sx={styles.nav}>Kıvanç Sk. No:1, Osmanağa, 34714 Kadıköy/İstanbul
+              sx={styles.nav}>Kıvanç Sk. No:1, Osmanağa mahallesi, Halitağa caddesi, 34714 Kadıköy/İstanbul
               {  //<Flex as="ul" sx={styles.nav}>
                 //{navItems?.map((item) => (
                 //<li key={item.id}>
