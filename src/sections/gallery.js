@@ -77,7 +77,7 @@ const Gallery = () => {
         </Box>
         <Link href="/galeri"><a>
           <Button variant="muted" sx={styles.button}>
-            Galeriye gitmek için tıklayın <RiArrowRightSLine size="20px" />
+            Daha fazlası <RiArrowRightSLine size="20px" />
           </Button></a></Link>
       </Container>
     </Box>
