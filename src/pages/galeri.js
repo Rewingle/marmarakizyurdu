@@ -37,6 +37,14 @@ import banyo2 from 'assets/images/gallery/banyo2min.webp';
 import banyo1 from 'assets/images/gallery/banyo1min.webp';
 import banyo1full from 'assets/images/gallery/banyo1full.webp';
 import banyo2full from 'assets/images/gallery/banyo2full.webp';
+import antre1 from 'assets/images/gallery/antremin.webp';
+import antre2 from 'assets/images/gallery/antre2min.webp';
+import antre3 from 'assets/images/gallery/antre3min.webp';
+import dus from 'assets/images/gallery/dusmin.webp';
+import antre1full from 'assets/images/gallery/antrefull.webp';
+import antre2full from 'assets/images/gallery/antre2full.webp';
+import antre3full from 'assets/images/gallery/antre3full.webp';
+import dusfull from 'assets/images/gallery/dusfull.webp';
 
 function galeri() {
   const data = {
@@ -146,6 +154,34 @@ function galeri() {
         title: 'Banyolu oda',
         full: banyo2full
       }
+    ],
+    antre: [
+      {
+        id:1,
+        image: antre1,
+        title: 'Antre-1',
+        full: antre1full
+      },
+      {
+        id:2,
+        image: antre2,
+        title: 'Antre-2',
+        full: antre2full
+      },
+      {
+        id:3,
+        image: antre3,
+        title: 'Antre-3',
+        full: antre3full
+      }
+    ],
+    dus:[
+      {
+        id:1,
+        image: dus,
+        title: 'Duş',
+        full: dusfull
+      }
     ]
    
   };
@@ -168,6 +204,17 @@ function galeri() {
                 <GalleryCard key={item.id} item={item} />
               ))}
             </Box>
+
+            <SectionHeading
+              sx={styles.heading}
+              title="Antre"
+            />
+            <Box as={Masonry} options={masonryOptions} sx={styles.galleryWrapper}>
+              {data.antre?.map((item) => (
+                <GalleryCard key={item.id} item={item} />
+              ))}
+            </Box>
+
             <SectionHeading
               sx={styles.heading}
               title="Banyolar"
@@ -178,6 +225,18 @@ function galeri() {
                 <GalleryCard key={item.id} item={item} />
               ))}
             </Box>
+
+            <SectionHeading
+              sx={styles.heading}
+              title="Duşlar"
+            />
+
+            <Box as={Masonry} options={masonryOptions} sx={styles.galleryWrapper}>
+              {data.dus?.map((item) => (
+                <GalleryCard key={item.id} item={item} />
+              ))}
+            </Box>
+
             <SectionHeading
               sx={styles.heading}
               title="Odalar"
@@ -200,7 +259,7 @@ function galeri() {
 
 const styles = {
   section: {
-
+    fontFamily: 'Helvetica',
     pt: [30, 30, 40, 50, 60],
     pb: [60, 60, 60, 90, 80, 120],
   },
