@@ -45,6 +45,8 @@ import antre1full from 'assets/images/gallery/antrefull.webp';
 import antre2full from 'assets/images/gallery/antre2full.webp';
 import antre3full from 'assets/images/gallery/antre3full.webp';
 import dusfull from 'assets/images/gallery/dusfull.webp';
+import ortak1 from 'assets/images/gallery/ortakmin.webp';
+import ortakfull from 'assets/images/gallery/ortakfull.webp';
 
 function galeri() {
   const data = {
@@ -153,6 +155,12 @@ function galeri() {
         image: banyo2,
         title: 'Banyolu oda',
         full: banyo2full
+      },
+      {
+        id:3,
+        image: ortak1,
+        title: 'Ortak Banyo',
+        full: ortakfull
       }
     ],
     antre: [
