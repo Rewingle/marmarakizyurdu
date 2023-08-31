@@ -47,6 +47,14 @@ import antre3full from 'assets/images/gallery/antre3full.webp';
 import dusfull from 'assets/images/gallery/dusfull.webp';
 import ortak1 from 'assets/images/gallery/ortakmin.webp';
 import ortakfull from 'assets/images/gallery/ortakfull.webp';
+import cafe1min from 'assets/images/gallery/cafe1min.webp';
+import cafe2min from 'assets/images/gallery/cafe2min.webp';
+import cafe3min from 'assets/images/gallery/cafe3min.webp';
+import cafe4min from 'assets/images/gallery/cafe4min.webp';
+import cafe1full from 'assets/images/gallery/cafe1full.webp';
+import cafe2full from 'assets/images/gallery/cafe2full.webp';
+import cafe3full from 'assets/images/gallery/cafe3full.webp';
+import cafe4full from 'assets/images/gallery/cafe4full.webp';
 
 function galeri() {
   const data = {
@@ -163,6 +171,32 @@ function galeri() {
         full: ortakfull
       }
     ],
+    kafe:[
+      {
+        id:1,
+        image: cafe1min,
+        title: 'Teras',
+        full: cafe1full
+      },
+      {
+        id:2,
+        image: cafe2min,
+        title: 'Çalışma alanı',
+        full: cafe2full
+      },
+      {
+        id:3,
+        image: cafe3min,
+        title: 'Çalışma alanı',
+        full: cafe3full
+      },
+      {
+        id:3,
+        image: cafe4min,
+        title: 'Çalışma alanı',
+        full: cafe4full
+      }
+    ],
     antre: [
       {
         id:1,
@@ -219,6 +253,15 @@ function galeri() {
             />
             <Box as={Masonry} options={masonryOptions} sx={styles.galleryWrapper}>
               {data.antre?.map((item) => (
+                <GalleryCard key={item.id} item={item} />
+              ))}
+            </Box>
+            <SectionHeading
+              sx={styles.heading}
+              title="Kafe ve Çalışma Alanları"
+            />
+            <Box as={Masonry} options={masonryOptions} sx={styles.galleryWrapper}>
+              {data.kafe?.map((item) => (
                 <GalleryCard key={item.id} item={item} />
               ))}
             </Box>
