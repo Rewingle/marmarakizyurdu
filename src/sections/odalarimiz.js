@@ -124,7 +124,7 @@ function Odalarimiz() {
 
                         <Box sx={styles.info}>
                             <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                                <Text as="p" sx={{ fontWeight: '600', fontSize: '22px',fontFamily:'Helvetica' }}> Odalarımız 4 kişilik olup, banyolu ve ortak banyolu olarak 2 tip odamız mevcuttur.</Text>
+                                <Text as="p" sx={{ fontWeight: '600', fontSize: '22px',fontFamily:'Helvetica' }}> Odalarımız 2 kişilik ve 4 kişilik olup, banyolu ve ortak banyolu olarak 2 tip odamız mevcuttur.</Text>
 
                             </Box>
                             <hr />
